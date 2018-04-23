@@ -9,7 +9,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/microservice-store-common" />
             <option value="$PROJECT_DIR$/microservice-store-eureka" />
+            <option value="$PROJECT_DIR$/microservice-store-user" />
+            <option value="$PROJECT_DIR$/microservice-store-user-api" />
+            <option value="$PROJECT_DIR$/microservice-store-web-admin" />
+            <option value="$PROJECT_DIR$/microservice-store-zuul" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />

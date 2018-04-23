@@ -5,9 +5,24 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-cloud.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-cloud_main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-cloud_main.iml" group="microservice-store-cloud" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-cloud_test.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-cloud_test.iml" group="microservice-store-cloud" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-common.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-common.iml" group="microservice-store-common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-common/microservice-store-common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-common/microservice-store-common_main.iml" group="microservice-store-common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-common/microservice-store-common_test.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-common/microservice-store-common_test.iml" group="microservice-store-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-eureka.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-eureka.iml" group="microservice-store-eureka" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-eureka/microservice-store-eureka_main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-eureka/microservice-store-eureka_main.iml" group="microservice-store-eureka" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-eureka/microservice-store-eureka_test.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-eureka/microservice-store-eureka_test.iml" group="microservice-store-eureka" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-user.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-user.iml" group="microservice-store-user" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-user-api.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-user-api.iml" group="microservice-store-user-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-user-api/microservice-store-user-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-user-api/microservice-store-user-api_main.iml" group="microservice-store-user-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-user-api/microservice-store-user-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-user-api/microservice-store-user-api_test.iml" group="microservice-store-user-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-user/microservice-store-user_main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-user/microservice-store-user_main.iml" group="microservice-store-user" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-user/microservice-store-user_test.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-user/microservice-store-user_test.iml" group="microservice-store-user" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-web-admin.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-web-admin.iml" group="microservice-store-web-admin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-web-admin/microservice-store-web-admin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-web-admin/microservice-store-web-admin_main.iml" group="microservice-store-web-admin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-web-admin/microservice-store-web-admin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-web-admin/microservice-store-web-admin_test.iml" group="microservice-store-web-admin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-zuul.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-zuul.iml" group="microservice-store-zuul" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-zuul/microservice-store-zuul_main.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-zuul/microservice-store-zuul_main.iml" group="microservice-store-zuul" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microservice-store-zuul/microservice-store-zuul_test.iml" filepath="$PROJECT_DIR$/.idea/modules/microservice-store-zuul/microservice-store-zuul_test.iml" group="microservice-store-zuul" />
     </modules>
   </component>
 </project>

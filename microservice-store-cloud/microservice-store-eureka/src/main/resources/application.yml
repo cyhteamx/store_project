@@ -1,26 +1,9 @@
-spring:
-  application:
-    name: eureka-server
-
-#security:
-#  basic:
-#    enabled: true
-#  user:
-#    name: user
-#    password: pass
-
 server:
-  port: 8051
-
+  port: 8761
 eureka:
-  instance:
-    #instance-id: ${spring.cloud.client.ipAddress}:${server.port}
-    hostname: register.center.com
-    server:
-      port: ${server.port}
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.server.port}/eureka/
-#${security.user.name}:${security.user.password}@
+      defaultZone: http://localhost:8761/eureka
+#      defaultZone: http://localhost:8761/eureka

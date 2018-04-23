@@ -4,8 +4,22 @@
     <bytecodeTargetLevel>
       <module name="microservice-store-cloud_main" target="1.8" />
       <module name="microservice-store-cloud_test" target="1.8" />
+      <module name="microservice-store-common_main" target="1.8" />
+      <module name="microservice-store-common_test" target="1.8" />
       <module name="microservice-store-eureka_main" target="1.8" />
       <module name="microservice-store-eureka_test" target="1.8" />
+      <module name="microservice-store-service-admin-api_main" target="1.8" />
+      <module name="microservice-store-service-admin-api_test" target="1.8" />
+      <module name="microservice-store-service-admin_main" target="1.8" />
+      <module name="microservice-store-service-admin_test" target="1.8" />
+      <module name="microservice-store-user-api_main" target="1.8" />
+      <module name="microservice-store-user-api_test" target="1.8" />
+      <module name="microservice-store-user_main" target="1.8" />
+      <module name="microservice-store-user_test" target="1.8" />
+      <module name="microservice-store-web-admin_main" target="1.8" />
+      <module name="microservice-store-web-admin_test" target="1.8" />
+      <module name="microservice-store-zuul_main" target="1.8" />
+      <module name="microservice-store-zuul_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

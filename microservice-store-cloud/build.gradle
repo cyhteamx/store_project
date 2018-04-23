@@ -1,14 +1,11 @@
 buildscript {
     ext {
-        springBootVersion = '2.0.0.RELEASE'
+        springBootVersion = '2.0.1.RELEASE'
         springCloudVersion = 'Finchley.M9'
     }
     repositories {
         mavenCentral()
-//        mavenLocal()
-//        maven{
-//            url 'http://maven.aliyun.com/nexus/content/groups/public'
-//        }
+        mavenLocal()
         maven { url "https://repo.spring.io/snapshot" }
         maven { url "https://repo.spring.io/milestone" }
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
@@ -30,7 +27,7 @@ configure(allprojects) { project ->
     version = version
 
     ext.springCloudVersion          = 'Finchley.M9'
-    ext.springBootVersion           = '2.0.0.RELEASE'
+    ext.springBootVersion           = '2.0.1.RELEASE'
     ext.junitVersion                = "4.12"
 
     apply plugin: "java"
@@ -46,7 +43,7 @@ configure(allprojects) { project ->
 //    apply plugin: 'docker'
 
     repositories {
-//        maven { url "http://localhost:8077/nexus/content/groups/public/" }
+        //mavenCentral()
         mavenLocal()
         maven { url "https://repo.spring.io/snapshot" }
         maven { url "https://repo.spring.io/milestone" }
@@ -93,6 +90,22 @@ project(":microservice-store-eureka") {
 
     dependencies {
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
+    }
+}
+
+project(":microservice-store-zuul") {
+    description = "microservice-store-zuul"
+
+    dependencies {
+        compile( 'org.springframework.cloud:spring-cloud-starter-netflix-zuul' )
+    }
+}
+
+project(":microservice-store-feign") {
+    description = "microservice-store-feign"
+
+    dependencies {
+        compile( 'org.springframework.cloud:spring-cloud-starter-openfeign' )
     }
 }
 

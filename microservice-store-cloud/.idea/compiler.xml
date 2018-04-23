@@ -2,10 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="microservice-store-cloud-microservice-store-zuul_main" target="1.8" />
+      <module name="microservice-store-cloud-microservice-store-zuul_test" target="1.8" />
       <module name="microservice-store-cloud_main" target="1.8" />
       <module name="microservice-store-cloud_test" target="1.8" />
       <module name="microservice-store-eureka_main" target="1.8" />
       <module name="microservice-store-eureka_test" target="1.8" />
+      <module name="microservice-store-fegin_main" target="1.8" />
+      <module name="microservice-store-fegin_test" target="1.8" />
+      <module name="microservice-store-feign_main" target="1.8" />
+      <module name="microservice-store-feign_test" target="1.8" />
+      <module name="microservice-store-zuul_main" target="1.8" />
+      <module name="microservice-store-zuul_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

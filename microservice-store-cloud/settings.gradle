@@ -1,4 +1,5 @@
 rootProject.name = 'microservice-store-cloud'
 
 include 'microservice-store-eureka'
-
+include 'microservice-store-zuul'
+include 'microservice-store-feign'

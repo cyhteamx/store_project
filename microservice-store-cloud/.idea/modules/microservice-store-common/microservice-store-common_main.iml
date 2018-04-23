@@ -4,6 +4,14 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
+<<<<<<< Updated upstream
+=======
+    <facet type="web" name="Web">
+      <configuration>
+        <webroots />
+      </configuration>
+    </facet>
+>>>>>>> Stashed changes
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../../microservice-store-common/out/production/classes" />

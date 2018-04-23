@@ -8,10 +8,8 @@
       <module name="microservice-store-common_test" target="1.8" />
       <module name="microservice-store-eureka_main" target="1.8" />
       <module name="microservice-store-eureka_test" target="1.8" />
-      <module name="microservice-store-service-admin-api_main" target="1.8" />
-      <module name="microservice-store-service-admin-api_test" target="1.8" />
-      <module name="microservice-store-service-admin_main" target="1.8" />
-      <module name="microservice-store-service-admin_test" target="1.8" />
+      <module name="microservice-store-feign_main" target="1.8" />
+      <module name="microservice-store-feign_test" target="1.8" />
       <module name="microservice-store-user-api_main" target="1.8" />
       <module name="microservice-store-user-api_test" target="1.8" />
       <module name="microservice-store-user_main" target="1.8" />

@@ -5,10 +5,7 @@ buildscript {
     }
     repositories {
         mavenCentral()
-//        mavenLocal()
-//        maven{
-//            url 'http://maven.aliyun.com/nexus/content/groups/public'
-//        }
+        mavenLocal()
         maven { url "https://repo.spring.io/snapshot" }
         maven { url "https://repo.spring.io/milestone" }
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
@@ -51,7 +48,7 @@ configure(allprojects) { project ->
 //    apply plugin: 'docker'
 
     repositories {
-//        maven { url "http://localhost:8077/nexus/content/groups/public/" }
+        //mavenCentral()
         mavenLocal()
         maven { url "https://repo.spring.io/snapshot" }
         maven { url "https://repo.spring.io/milestone" }
@@ -126,6 +123,22 @@ project(":microservice-store-common") {
 
 //        compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul") compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
 
+    }
+}
+
+project(":microservice-store-zuul") {
+    description = "microservice-store-zuul"
+
+    dependencies {
+        compile( 'org.springframework.cloud:spring-cloud-starter-netflix-zuul' )
+    }
+}
+
+project(":microservice-store-feign") {
+    description = "microservice-store-feign"
+
+    dependencies {
+        compile( 'org.springframework.cloud:spring-cloud-starter-openfeign' )
     }
 }
 

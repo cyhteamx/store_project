@@ -1,7 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba61f93a-90d9-4801-b7ba-8536df90c17e" name="Default" comment="" />
+    <list default="true" id="ba61f93a-90d9-4801-b7ba-8536df90c17e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_afterburner_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_hystrix_hystrix_javanica_1_5_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_hystrix_hystrix_serialization_1_5_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_zuul_zuul_core_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_openfeign_feign_core_9_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_openfeign_feign_hystrix_9_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_openfeign_feign_java8_9_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_openfeign_feign_slf4j_9_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_micrometer_micrometer_core_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_epoll_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_unix_common_4_1_23_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava_1_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava_reactive_streams_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_freemarker_freemarker_2_3_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_actuator_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_actuator_autoconfigure_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_actuator_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_freemarker_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_netflix_zuul_2_0_0_M8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_openfeign_core_2_0_0_M2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_0_0_M8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_0_0_M8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_openfeign_2_0_0_M2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_crypto_5_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_support_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1296111122/microservice-store-feign.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1296111122/microservice-store-feign_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1296111122/microservice-store-feign_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/microservice-store-zuul/microservice-store-cloud-microservice-store-zuul_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/microservice-store-zuul/microservice-store-cloud-microservice-store-zuul_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/microservice-store-zuul/microservice-store-zuul.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-store-feign/src/main/java/com/store/StoreServiceFeignApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-store-feign/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-store-feign/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/StoreServiceZuulApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/filter/MyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-store-zuul/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-store-zuul/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_andrewoma_dexx_dexx_collections_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_andrewoma_dexx_dexx_collections_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_vlsi_compactmap_compactmap_1_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_vlsi_compactmap_compactmap_1_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_18_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_archaius_archaius_core_0_7_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_archaius_archaius_core_0_7_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_hystrix_hystrix_core_1_5_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_hystrix_hystrix_core_1_5_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_commons_util_0_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_commons_util_0_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_servo_servo_core_0_10_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_servo_servo_core_0_10_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_servo_servo_internal_0_10_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_netflix_servo_servo_internal_0_10_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_client_1_19_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_client_1_19_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_core_1_19_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_core_1_19_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_server_1_19_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_server_1_19_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_servlet_1_19_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_servlet_1_19_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_configuration_commons_configuration_1_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_configuration_commons_configuration_1_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_jxpath_commons_jxpath_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_jxpath_commons_jxpath_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang_commons_lang_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_micrometer_micrometer_core_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_epoll_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_unix_common_4_1_22_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava_1_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_0_4_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_0_4_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_contexts_0_4_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_contexts_0_4_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_servo_0_4_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxnetty_servo_0_4_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_ws_rs_jsr311_api_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__joda_time_joda_time_2_9_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__joda_time_joda_time_2_9_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr_runtime_3_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr_runtime_3_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_stringtemplate_3_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_stringtemplate_3_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_math_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcpkix_jdk15on_1_56.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcpkix_jdk15on_1_56.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcprov_jdk15on_1_56.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcprov_jdk15on_1_56.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_jettison_jettison_1_3_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_jettison_jettison_1_3_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_woodstox_stax2_api_3_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_woodstox_stax2_api_3_1_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_freemarker_freemarker_2_3_27_incubating.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hdrhistogram_HdrHistogram_2_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hdrhistogram_HdrHistogram_2_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_latencyutils_LatencyUtils_2_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_actuator_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_actuator_autoconfigure_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_actuator_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_freemarker_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_crypto_5_0_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_rsa_1_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_rsa_1_0_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_support_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__xpp3_xpp3_min_1_1_4c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/microservice-store-cloud_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/microservice-store-cloud_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/microservice-store-cloud_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/microservice-store-cloud_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/microservice-store-eureka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/microservice-store-eureka/microservice-store-eureka.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/microservice-store-eureka/microservice-store-eureka_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/microservice-store-eureka/microservice-store-eureka_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/microservice-store-eureka/microservice-store-eureka_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/microservice-store-eureka/microservice-store-eureka_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-store-eureka/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-store-eureka/out/production/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -11,6 +218,7 @@
     <ignored path="$PROJECT_DIR$/microservice-store-zuul/.gradle/" />
     <ignored path="$PROJECT_DIR$/microservice-store-zuul/build/" />
     <ignored path="$PROJECT_DIR$/microservice-store-zuul/out/" />
+<<<<<<< HEAD
     <ignored path="$PROJECT_DIR$/microservice-store-common/.gradle/" />
     <ignored path="$PROJECT_DIR$/microservice-store-common/build/" />
     <ignored path="$PROJECT_DIR$/microservice-store-common/out/" />
@@ -29,6 +237,14 @@
     <ignored path="$PROJECT_DIR$/microservice-store-user/.gradle/" />
     <ignored path="$PROJECT_DIR$/microservice-store-user/build/" />
     <ignored path="$PROJECT_DIR$/microservice-store-user/out/" />
+=======
+    <ignored path="$PROJECT_DIR$/microservice-store-fegin/.gradle/" />
+    <ignored path="$PROJECT_DIR$/microservice-store-fegin/build/" />
+    <ignored path="$PROJECT_DIR$/microservice-store-fegin/out/" />
+    <ignored path="$PROJECT_DIR$/microservice-store-feign/.gradle/" />
+    <ignored path="$PROJECT_DIR$/microservice-store-feign/build/" />
+    <ignored path="$PROJECT_DIR$/microservice-store-feign/out/" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +254,12 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/microservice-store-fegin">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/microservice-store-zuul">
       <ProjectState />
     </projectState>
   </component>
@@ -54,32 +276,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="microservice-store-cloud" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="microservice-store-cloud" type="f1a62948:ProjectNode" />
-                <item name=":microservice-store-eureka" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="microservice-store-cloud" type="f1a62948:ProjectNode" />
-                <item name=":microservice-store-eureka" type="2d1252cf:ModuleNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="microservice-store-cloud" type="f1a62948:ProjectNode" />
-                <item name=":microservice-store-eureka" type="2d1252cf:ModuleNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="microservice-store-cloud" type="f1a62948:ProjectNode" />
-                <item name=":microservice-store-eureka" type="2d1252cf:ModuleNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -92,16 +288,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1410">
               <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding />
+=======
+            <state relative-caret-position="300">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
@@ -118,15 +320,32 @@
             <state relative-caret-position="153">
               <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
               <folding />
+=======
+      <file leaf-file-name="StoreServiceEurekaApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-store-eureka/src/main/java/com/store/StoreServiceEurekaApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="SellException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservice-store-common/src/main/java/com/store/exception/SellException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+=======
+      <file leaf-file-name="StoreServiceZuulApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/StoreServiceZuulApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,26 +353,74 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-store-zuul/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoreServiceFeignApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-store-feign/src/main/java/com/store/StoreServiceFeignApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservice-store-web-admin/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+=======
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-store-feign/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="OrderStatusEnum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservice-store-common/src/main/java/com/store/enums/OrderStatusEnum.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+=======
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-store-eureka/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ResponseBankException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservice-store-common/src/main/java/com/store/exception/ResponseBankException.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -182,15 +449,30 @@
               <folding />
             </state>
           </provider>
+=======
+      <file leaf-file-name="banner.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-store-eureka/src/main/resources/banner.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>spring-boot-starter-web</find>
       <find>org.springframework.boot</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -227,6 +509,7 @@
                 <option name="path" value="$PROJECT_DIR$/microservice-store-eureka" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
+<<<<<<< HEAD
                 <option name="name" value=":microservice-store-user" />
                 <option name="path" value="$PROJECT_DIR$/microservice-store-user" />
               </ExternalProjectPojo>
@@ -237,6 +520,10 @@
               <ExternalProjectPojo>
                 <option name="name" value=":microservice-store-web-admin" />
                 <option name="path" value="$PROJECT_DIR$/microservice-store-web-admin" />
+=======
+                <option name="name" value=":microservice-store-feign" />
+                <option name="path" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":microservice-store-zuul" />
@@ -822,16 +1109,26 @@
             </list>
           </value>
         </entry>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$/microservice-store-service-admin">
           <value>
             <list>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the components produced by project ':microservice-store-service-admin'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+        <entry key="$PROJECT_DIR$/microservice-store-fegin">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':microservice-store-fegin'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
@@ -842,15 +1139,32 @@
               <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of project ':microservice-store-service-admin'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':microservice-store-fegin'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Cleans all Eclipse files." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="cleanEclipse" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
@@ -866,40 +1180,83 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':microservice-store-fegin'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':microservice-store-fegin'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="cleanEclipseProject" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles test classes." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="testClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="bootJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse classpath file." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="eclipseClasspath" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the configuration model of project ':microservice-store-service-admin'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':microservice-store-fegin'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes main resources." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
@@ -910,116 +1267,218 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':microservice-store-fegin'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="cleanEclipseJdt" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the dependency management declared in project ':microservice-store-service-admin'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependency management declared in project ':microservice-store-fegin'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="dependencyManagement" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs this project as a Spring Boot application." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="bootRun" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles main Java source." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in project ':microservice-store-service-admin'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':microservice-store-fegin'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles the outputs of this project." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles test Java source." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in project ':microservice-store-service-admin'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':microservice-store-fegin'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates all Eclipse files." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="eclipse" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes test resources." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse JDT settings file." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="eclipseJdt" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="install" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse project file." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
                 <option name="name" value="eclipseProject" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of project ':microservice-store-service-admin'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':microservice-store-fegin'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-fegin" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
             </list>
           </value>
         </entry>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$/microservice-store-service-admin-api">
           <value>
             <list>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the components produced by project ':microservice-store-service-admin-api'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+        <entry key="$PROJECT_DIR$/microservice-store-feign">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':microservice-store-feign'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
@@ -1030,15 +1489,32 @@
               <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of project ':microservice-store-service-admin-api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':microservice-store-feign'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Cleans all Eclipse files." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="cleanEclipse" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
@@ -1054,40 +1530,83 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':microservice-store-feign'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':microservice-store-feign'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="cleanEclipseProject" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles test classes." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="testClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="bootJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse classpath file." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="eclipseClasspath" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the configuration model of project ':microservice-store-service-admin-api'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':microservice-store-feign'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes main resources." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
@@ -1098,95 +1617,179 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':microservice-store-feign'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="cleanEclipseJdt" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the dependency management declared in project ':microservice-store-service-admin-api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependency management declared in project ':microservice-store-feign'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="dependencyManagement" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs this project as a Spring Boot application." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="bootRun" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles main Java source." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in project ':microservice-store-service-admin-api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':microservice-store-feign'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles the outputs of this project." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles test Java source." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in project ':microservice-store-service-admin-api'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':microservice-store-feign'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates all Eclipse files." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="eclipse" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes test resources." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse JDT settings file." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="eclipseJdt" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="install" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse project file." />
+<<<<<<< HEAD
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
                 <option name="name" value="eclipseProject" />
               </ExternalTaskPojo>
@@ -1757,6 +2360,14 @@
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of project ':microservice-store-web-admin'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-web-admin" />
+=======
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':microservice-store-feign'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
             </list>
@@ -1954,6 +2565,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="7622487222000" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3584158613" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="2715822777" />
@@ -1967,6 +2579,20 @@
         <entry key="$PROJECT_DIR$/microservice-store-web-admin/build.gradle" value="3991214883" />
         <entry key="$PROJECT_DIR$/microservice-store-zuul/build.gradle" value="3991214883" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1062077087" />
+=======
+        <entry key="$PROJECT_DIR$" value="7622366279000" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="4087474057" />
+        <entry key="$PROJECT_DIR$/gradle.properties" value="2715822777" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="566444372" />
+        <entry key="$PROJECT_DIR$/microservice-store-eureka/build.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/microservice-store-fegin" value="0" />
+        <entry key="$PROJECT_DIR$/microservice-store-fegin/build.gradle" value="2919694376" />
+        <entry key="$PROJECT_DIR$/microservice-store-fegin/gradle/wrapper/gradle-wrapper.properties" value="2881256037" />
+        <entry key="$PROJECT_DIR$/microservice-store-fegin/settings.gradle" value="95259511" />
+        <entry key="$PROJECT_DIR$/microservice-store-zuul/build.gradle" value="2286330562" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="2601673661" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1999,6 +2625,7 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
+<<<<<<< HEAD
                   <entry key="$PROJECT_DIR$/microservice-store-common">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
@@ -2022,6 +2649,8 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
+=======
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                   <entry key="$PROJECT_DIR$/microservice-store-eureka">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
@@ -2045,6 +2674,7 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
+<<<<<<< HEAD
                   <entry key="$PROJECT_DIR$/microservice-store-service-admin">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
@@ -2069,6 +2699,9 @@
                     </value>
                   </entry>
                   <entry key="$PROJECT_DIR$/microservice-store-service-admin-api">
+=======
+                  <entry key="$PROJECT_DIR$/microservice-store-fegin">
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
@@ -2087,11 +2720,19 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.5.RELEASE/f4a2854b9d865e8b86717595aec16f877f8c6489/spring-jcl-5.0.5.RELEASE.jar" />
                           </list>
                         </option>
+<<<<<<< HEAD
                         <option name="path" value="$PROJECT_DIR$/microservice-store-service-admin-api" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
                   <entry key="$PROJECT_DIR$/microservice-store-user">
+=======
+                        <option name="path" value="$PROJECT_DIR$/microservice-store-fegin" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/microservice-store-feign">
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
@@ -2110,6 +2751,7 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.5.RELEASE/f4a2854b9d865e8b86717595aec16f877f8c6489/spring-jcl-5.0.5.RELEASE.jar" />
                           </list>
                         </option>
+<<<<<<< HEAD
                         <option name="path" value="$PROJECT_DIR$/microservice-store-user" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
@@ -2157,6 +2799,9 @@
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/microservice-store-web-admin" />
+=======
+                        <option name="path" value="$PROJECT_DIR$/microservice-store-feign" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -2328,6 +2973,7 @@
           </value>
         </entry>
       </map>
+<<<<<<< HEAD
     </option>
     <option name="externalProjectsViewState">
       <projects_view />
@@ -2335,6 +2981,11 @@
     <option name="projectSyncType">
       <map>
         <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+=======
+    </option>
+    <option name="projectSyncType">
+      <map>
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
         <entry key="$USER_HOME$/edu/x2june/imooc-spring-cloud/hello-world" value="PREVIEW" />
         <entry key="$USER_HOME$/edu/x2june/imooc-spring-cloud/micro-weather-basic" value="PREVIEW" />
         <entry key="$USER_HOME$/edu/x2june/imooc-spring-cloud/micro-weather-config-client" value="PREVIEW" />
@@ -2342,6 +2993,10 @@
         <entry key="$USER_HOME$/edu/x2june/imooc-spring-cloud/micro-weather-redis" value="PREVIEW" />
         <entry key="$USER_HOME$/edu/x2june/imooc-spring-cloud/msa-weather-collection-eureka-feign" value="PREVIEW" />
         <entry key="$USER_HOME$/edu/x2june/imooc-spring-cloud/msa-weather-report-eureka" value="PREVIEW" />
+<<<<<<< HEAD
+=======
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
         <entry key="$USER_HOME$/xbin-store-cloud" value="PREVIEW" />
       </map>
     </option>
@@ -2352,6 +3007,7 @@
         <option value="$PROJECT_DIR$/microservice-store-eureka/src/main/java/com/store/StoreServiceEurekaApplication.java" />
         <option value="$PROJECT_DIR$/microservice-store-eureka/build.gradle" />
         <option value="$PROJECT_DIR$/gradle.properties" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/microservice-store-eureka/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/microservice-store-eureka/src/main/java/com/store/ZuulApplication.java" />
         <option value="$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/EurekaApplication.java" />
@@ -2366,6 +3022,20 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/microservice-store-web-admin/src/main/resources/logback-spring.xml" />
+=======
+        <option value="$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/StoreServiceEurekaApplication.java" />
+        <option value="$PROJECT_DIR$/microservice-store-zuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/MyFilter.java" />
+        <option value="$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/filter/MyFilter.java" />
+        <option value="$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/StoreServiceZuulApplication.java" />
+        <option value="$PROJECT_DIR$/microservice-store-fegin/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/microservice-store-fegin/src/main/java/StoreServiceFeginApplication.java" />
+        <option value="$PROJECT_DIR$/microservice-store-fegin/src/main/java/com/store/StoreServiceFeginApplication.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/microservice-store-fegin/src/main/java/com/store/StoreServiceFeignApplication.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/microservice-store-feign/src/main/java/com/store/StoreServiceFeignApplication.java" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
       </list>
     </option>
   </component>
@@ -2381,27 +3051,29 @@
       <select />
     </treeState>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="712" />
+    <option name="width" value="1440" />
+    <option name="height" value="821" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2409,6 +3081,7 @@
               <item name="microservice-store-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="microservice-store-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="microservice-store-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="microservice-store-cloud" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -2453,26 +3126,47 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="AndroidView" />
+=======
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+=======
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.26899564" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+<<<<<<< HEAD
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.store.exception" />
       <recent name="com.store.model" />
@@ -2485,9 +3179,31 @@
       <recent name="$PROJECT_DIR$/microservice-store-common/src/main/resources" />
       <recent name="$PROJECT_DIR$/microservice-store-zuul/src/main/resources" />
       <recent name="$PROJECT_DIR$/microservice-store-zuul/src/main/java" />
+=======
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/microservice-store-fegin/src/main/resources" />
+      <recent name="$PROJECT_DIR$/microservice-store-zuul" />
+      <recent name="$PROJECT_DIR$/microservice-store-eureka" />
+      <recent name="$PROJECT_DIR$" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.store" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.idea/modules/microservice-store-eureka" />
+      <recent name="$PROJECT_DIR$/microservice-store-fegin/src/main/java/com/example" />
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -2498,12 +3214,16 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.18361375" />
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Spring Boot.ZuulApplication">
+=======
+  <component name="RunManager" selected="Groovy.build">
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+<<<<<<< HEAD
       <module />
     </configuration>
     <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -2524,20 +3244,11 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="microservice-store-eureka_main" />
       <envs />
+=======
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration name="build" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="microservice-store-cloud" />
@@ -2556,8 +3267,6 @@
       <setting name="debug" value="false" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -2567,26 +3276,35 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration name="MicroserviceStoreFeginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-store-fegin_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.store.MicroserviceStoreFeginApplication" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="StoreServiceEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.store.EurekaApplication" />
+=======
+    <configuration name="StoreServiceFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-store-feign_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.store.StoreServiceFeignApplication" />
+    </configuration>
+    <configuration name="eureka-service" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
       <module name="microservice-store-eureka_main" />
-      <envs />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.store.StoreServiceEurekaApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration name="zuul-service" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-store-zuul_main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.store.StoreServiceZuulApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -2595,8 +3313,6 @@
       <envs />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -2609,17 +3325,21 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -2627,23 +3347,29 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+<<<<<<< HEAD
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.StoreServiceEurekaApplication" />
       <item index="1" class="java.lang.String" itemvalue="Application.StoreServiceEurekaApplication" />
       <item index="2" class="java.lang.String" itemvalue="Groovy.build" />
       <item index="3" class="java.lang.String" itemvalue="Groovy.settings" />
       <item index="4" class="java.lang.String" itemvalue="Spring Boot.ZuulApplication" />
+=======
+    <list>
+      <item itemvalue="Spring Boot.zuul-service" />
+      <item itemvalue="Spring Boot.eureka-service" />
+      <item itemvalue="Groovy.build" />
+      <item itemvalue="Groovy.settings" />
+      <item itemvalue="Spring Boot.MicroserviceStoreFeginApplication" />
+      <item itemvalue="Spring Boot.StoreServiceFeignApplication" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.StoreServiceEurekaApplication" />
-        <item index="1" class="java.lang.String" itemvalue="Groovy.build" />
-        <item index="2" class="java.lang.String" itemvalue="Groovy.settings" />
+      <list>
+        <item itemvalue="Groovy.build" />
+        <item itemvalue="Groovy.settings" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -2658,12 +3384,22 @@
       <workItem from="1524368765980" duration="11859000" />
       <workItem from="1524404339429" duration="9786000" />
       <workItem from="1524459545207" duration="5000" />
+<<<<<<< HEAD
       <workItem from="1524491827021" duration="6958000" />
+=======
+      <workItem from="1524459910800" duration="6763000" />
+      <workItem from="1524492256295" duration="178000" />
+      <workItem from="1524492448967" duration="1128000" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="28608000" />
+=======
+    <option name="totallyTimeSpent" value="27780000" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2675,6 +3411,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="23" width="1280" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
@@ -2711,6 +3448,49 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="0" y="23" width="1440" height="821" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="sbt" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.32596686" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32956383" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49928468" weight="0.32596686" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32872927" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32596686" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32872927" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run Dashboard" order="7" weight="0.32872927" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.27900553" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32872927" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32872927" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32872927" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48994976" visible="true" weight="0.23462088" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" sideWeight="0.51005024" side_tool="true" weight="0.24959612" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.32904148" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" sideWeight="0.51005024" side_tool="true" weight="0.24959612" />
+      <window_info anchor="bottom" id="Inspection Results" order="7" weight="0.32872927" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2723,7 +3503,6 @@
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/microservice-store-eureka/out/production/resources/application.yml">
@@ -2908,12 +3687,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-store-common/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1605">
+          <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/microservice-store-zuul/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -2934,12 +3713,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/StoreServiceZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
           <folding>
             <marker date="1523942464000" expanded="true" signature="674:818" ph="SELECT categ... product_category" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/microservice-store-common/src/main/java/com/store/constant/AutoReplyCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-232">
@@ -3069,13 +3869,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-store-common/src/main/java/com/store/model/ProductCategory.java">
+=======
+    <entry file="file://$PROJECT_DIR$/microservice-store-zuul/src/main/resources/application.yml">
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="18" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/microservice-store-common/src/main/java/com/store/dao/IHolidayRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -3088,6 +3891,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+=======
+    <entry file="file://$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/filter/MyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="21" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -3096,6 +3905,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-store-common/src/main/java/com/store/exception/BasisException.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -3127,13 +3937,89 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-store-common/src/main/java/com/store/exception/SellerAuthorizeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+=======
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-eureka/src/main/java/com/store/StoreServiceEurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-eureka/src/main/java/com/store/StoreServiceEurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-eureka/src/main/java/com/store/StoreServiceEurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.5.RELEASE/e9f2761e13da4228793ee5fcaa983889e68c4c61/dependency-management-plugin-1.0.5.RELEASE-sources.jar!/io/spring/gradle/dependencymanagement/internal/dsl/StandardDependencyManagementExtension.java" />
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-bin/3p92xsbhik5vmig8i90n16yxc/gradle-4.0/lib/gradle-core-4.0.jar!/org/gradle/api/Project.class" />
+    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-all/ac27o8rbd0ic8ih41or9l32mv/gradle-4.0/src/core/org/gradle/api/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="432" column="6" lean-forward="true" selection-start-line="432" selection-start-column="6" selection-end-line="432" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-eureka/build.gradle" />
+    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-all/ac27o8rbd0ic8ih41or9l32mv/gradle-4.0/src/build-init/org/gradle/api/tasks/wrapper/Wrapper.java">
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/microservice-store-common/src/main/java/com/store/enums/ProductStatusEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3147,11 +4033,87 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/microservice-store-zuul/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/microservice-store-fegin/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/filter/MyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules/microservice-store-zuul_main.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1528" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules/microservice-store-cloud-microservice-store-zuul.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules/microservice-store-eureka/microservice-store-eureka.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/gradle.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/phpRuntime.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1685" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25948" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-fegin/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava_1_3_6.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-fegin/src/main/java/com/store/StoreServiceFeginApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+          </folding>
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-store-common/src/main/java/com/store/exception/ResponseBankException.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -3178,6 +4140,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+=======
+        <state relative-caret-position="165">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3242,9 +4208,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1410">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding />
+=======
+        <state relative-caret-position="300">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-feign/src/main/java/com/store/StoreServiceFeignApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-feign/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-eureka/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-store-zuul/src/main/java/com/store/StoreServiceZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
         </state>
       </provider>
     </entry>
@@ -3257,7 +4279,11 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
+<<<<<<< HEAD
                 <option value="0.2" />
+=======
+                <option value="0.26899564" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
               </list>
             </option>
           </splitter-proportions>
@@ -3265,11 +4291,19 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+=======
+          <last-edited>Web (microservice-store-eureka_test)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.26899564" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
               </list>
             </option>
           </splitter-proportions>
@@ -3280,7 +4314,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.26899564" />
               </list>
             </option>
           </splitter-proportions>
@@ -3288,11 +4322,19 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>1.8 (1)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+=======
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.26899564" />
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
               </list>
             </option>
           </splitter-proportions>
@@ -3324,11 +4366,15 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+<<<<<<< HEAD
           <last-edited>Gradle: antlr:antlr:2.7.7</last-edited>
+=======
+          <last-edited>Gradle: org.springframework:spring-test:5.0.4.RELEASE</last-edited>
+>>>>>>> c44c3da12511010e2421c35c591afde0abd396fd
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.26899564" />
               </list>
             </option>
           </splitter-proportions>

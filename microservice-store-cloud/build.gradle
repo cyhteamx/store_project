@@ -1,0 +1,135 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.0.RELEASE'
+        springCloudVersion = 'Finchley.M9'
+    }
+    repositories {
+        mavenCentral()
+//        mavenLocal()
+//        maven{
+//            url 'http://maven.aliyun.com/nexus/content/groups/public'
+//        }
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url "https://repo.spring.io/milestone" }
+
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+//        classpath('se.transmode.gradle:gradle-docker:1.2')
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.7'
+}
+
+configure(allprojects) { project ->
+    group = "com.store"
+    version = version
+
+    ext.springCloudVersion          = 'Finchley.M9'
+    ext.springBootVersion           = '2.0.0.RELEASE'
+    ext.junitVersion                = "4.12"
+
+    apply plugin: "java"
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'maven'
+
+    if (!(name.contains('common'))) {
+        apply plugin: 'org.springframework.boot'
+    }
+//    apply plugin: 'docker'
+
+    repositories {
+//        maven { url "http://localhost:8077/nexus/content/groups/public/" }
+        mavenLocal()
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url "https://repo.spring.io/milestone" }
+    }
+
+    dependencies {
+        if (!(name.contains('common'))) {
+            testCompile("org.springframework.boot:spring-boot-starter-test")
+            testCompile("junit:junit:${junitVersion}")
+        }
+    }
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+            mavenBom "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
+
+        }
+    }
+//    if (!((name.contains('common')) || (name.contains('api'))  || (name == 'microservice-store-cloud'))) {
+//        task buildDocker(type: Docker, dependsOn: bootRepackage) {
+//            push = true
+//            registry = dockerRegistry
+//            applicationName = jar.baseName
+//            dockerfile = file('Dockerfile')
+//            doFirst {
+//                copy {
+//                    from jar
+//                    into stageDir
+//                }
+//            }
+//        }
+//    }
+
+    if (name.contains('api')) {
+        tasks.remove(bootRepackage)
+    }
+
+}
+
+project(":microservice-store-eureka") {
+    description = "microservice-store-eureka"
+
+    dependencies {
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
+    }
+}
+
+configure(rootProject) {
+    description = "microservice-store-cloud"
+
+//    dependencyManagement {
+//        imports {
+//            mavenBom "io.projectreactor:reactor-bom"
+//        }
+//        resolutionStrategy {
+//            cacheChangingModulesFor 0, 'seconds'
+//        }
+//        applyMavenExclusions = false
+//    }
+
+    // don't publish the default jar for the root project
+    configurations.archives.artifacts.clear()
+
+    dependencies {  // for integration tests
+//        testCompile(project(":spring-aop"))
+
+    }
+
+//    task buildDocker(type: Docker, dependsOn: bootRepackage) {
+//        push = true
+//        applicationName = jar.baseName
+//        dockerfile = file('Dockerfile')
+//        doFirst {
+//            copy {
+//                from jar
+//                into stageDir
+//            }
+//        }
+//    }
+
+}
+
+
+

@@ -92,11 +92,23 @@ configure(allprojects) { project ->
 }
 
 project(":microservice-store-web-admin") {
-    description = "microservice-web-admin"
+    description = "microservice-store-web-admin"
 
     dependencies {
-//       compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
-//        compile("org.springframework.boot:spring-boot-starter-security")
+    }
+}
+
+project(":microservice-store-user") {
+    description = "microservice-store-user"
+
+    dependencies {
+    }
+}
+
+project(":microservice-store-user-api") {
+    description = "microservice-store-user-api"
+
+    dependencies {
     }
 }
 

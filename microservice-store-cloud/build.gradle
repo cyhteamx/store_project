@@ -4,7 +4,7 @@ buildscript {
         springCloudVersion = 'Finchley.M9'
     }
     repositories {
-        mavenCentral()
+        //mavenCentral()
         mavenLocal()
         maven { url "https://repo.spring.io/snapshot" }
         maven { url "https://repo.spring.io/milestone" }
@@ -89,6 +89,15 @@ configure(allprojects) { project ->
 //        tasks.remove(bootRepackage)
 //    }
 
+}
+
+project(":microservice-store-web-admin") {
+    description = "microservice-web-admin"
+
+    dependencies {
+//       compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
+//        compile("org.springframework.boot:spring-boot-starter-security")
+    }
 }
 
 project(":microservice-store-eureka") {

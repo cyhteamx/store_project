@@ -6,3 +6,4 @@ include 'microservice-store-common'
 include 'microservice-store-web-admin'
 include 'microservice-store-user-api'
 include 'microservice-store-user'
+

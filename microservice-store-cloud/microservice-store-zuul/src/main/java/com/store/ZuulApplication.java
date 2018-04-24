@@ -1,11 +1,11 @@
 package com.store;
 
-import com.store.zuul.AccessFilter;
+//import com.store.zuul.AccessFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
-import org.springframework.context.annotation.Bean;
+//import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableZuulProxy
@@ -16,9 +16,9 @@ public class ZuulApplication {
 		SpringApplication.run(ZuulApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	public AccessFilter tokenFilter() {
 		return new AccessFilter();
-	}
+	}*/
 }
 

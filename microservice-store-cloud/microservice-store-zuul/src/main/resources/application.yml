@@ -1,5 +1,5 @@
 server:
-  port: 6666
+  port: 8888
 
 spring:
   application:
@@ -14,5 +14,9 @@ zuul:
   routes:
     admin:
       path: /store-admin/**
+      #url: http://localhost:8777
       serviceId: msa-store-admin
 
+#ribbon:
+#  eureka:
+#    enabled: false #配置zuul路由时用将此属性设置为false

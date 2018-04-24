@@ -4,7 +4,7 @@ buildscript {
         springCloudVersion = 'Finchley.M9'
     }
     repositories {
-        //mavenCentral()
+        mavenCentral()
         mavenLocal()
         maven { url "https://repo.spring.io/snapshot" }
         maven { url "https://repo.spring.io/milestone" }
@@ -28,12 +28,13 @@ configure(allprojects) { project ->
 
     ext.springCloudVersion          = 'Finchley.M9'
     ext.springBootVersion           = '2.0.1.RELEASE'
-    ext.junitVersion                = "4.12"
-    ext.mysqlVersion                = "8.0.11"
+    ext.junitVersion                = '4.12'
+    ext.mysqlVersion                = '8.0.11'
     ext.springBootMyBatisVersion    = '1.3.2'
     ext.springBootpagehelperVersion = '1.2.5'
     ext.springBootDruidVersion      = '1.1.9'
-    ext.lombokVersion               = "1.16.20"
+    ext.lombokVersion               = '1.16.20'
+    ext.springWebVersion            = '5.0.5.RELEASE'
     
     apply plugin: "java"
     apply plugin: 'idea'
@@ -92,24 +93,31 @@ configure(allprojects) { project ->
 }
 
 project(":microservice-store-web-admin") {
-    description = "microservice-web-admin"
+    description = "microservice-store-web-admin"
 
     dependencies {
-        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.M8")
+        //compile("org.springframework:spring-web:${springWebVersion}")
+        compile("org.springframework.boot:spring-boot-starter-web")
+
 //        compile("org.springframework.boot:spring-boot-starter-security")
     }
 }
 
 project(":microservice-store-user") {
-    description = "microservice-user"
+    description = "microservice-store-user"
 
     dependencies {
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.M8")
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
+        compile("org.springframework.boot:spring-boot-starter-web")
+        //compile("org.springframework.cloud:spring-cloud-starter-feign")
 
     }
 }
 
 project(":microservice-store-user-api") {
-    description = "microservice-user-api"
+    description = "microservice-store-user-api"
 
     dependencies {
 
@@ -129,8 +137,10 @@ project(":microservice-store-zuul") {
     description = "microservice-store-zuul"
 
     dependencies {
-        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.M8")
         compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
+        compile("org.springframework.boot:spring-boot-starter-web")
+
 //        compile("org.springframework.boot:spring-boot-starter-security")
     }
 }

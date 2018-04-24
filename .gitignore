@@ -2,6 +2,7 @@
 /microservice-store-cloud/gradle  
 /microservice-store-cloud/.idea
 /microservice-store-cloud/build  
-/microservice-store-cloud/*.iml 
+/microservice-store-cloud/*.iml
+/microservice-store-cloud/*.log
 /microservice-store-cloud/*/out
 .DS_Store  

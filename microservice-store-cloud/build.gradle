@@ -42,7 +42,6 @@ configure(allprojects) { project ->
     apply plugin: 'io.spring.dependency-management'
     apply plugin: 'maven'
 
-
     if (!(name.contains('common'))) {
         apply plugin: 'org.springframework.boot'
     }

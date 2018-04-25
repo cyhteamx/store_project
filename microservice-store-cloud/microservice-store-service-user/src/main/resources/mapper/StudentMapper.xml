@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.application.mapper.StudentMapper">
+	
+	<resultMap type="com.application.entity.Student" id="stuMap">
+		<id property="ID" column="ID"/>
+		<result property="name" column="name"/>
+		<result property="password" column="password"/>
+		<result property="age" column="age"/>
+		<result property="remark" column="remark"/>
+	</resultMap>
+	
+	<!-- 增加用户 -->
+	<!-- <insert id="save" parameterType="com.application.entity.Student">
+		insert into student(ID,name,password,age,remark) values(#{ID},#{name},#{password},#{age},#{remark})
+	</insert>
+	
+	<update id="update" parameterType="com.application.entity.Student">
+		update student set name=#{name}, address=#{address} where ID=#{ID}
+	</update>
+	
+	<select id="findById" parameterType="string" resultMap="stuMap">
+		select * from student where ID=#{ID}
+	</select> -->
+	
+	<select id="findByNameMybatisNo" parameterType="string" resultMap="stuMap">
+		select * from student where name=#{name}
+	</select>
+	
+	<!-- <select id="findAll" resultMap="stuMap">
+		select * from student where 1=1
+	</select>
+	
+	<delete id="delete">
+		delete from student where ID=#{ID}
+	</delete> -->
+	
+</mapper>
+
+
+
+
+
+
+
+
+

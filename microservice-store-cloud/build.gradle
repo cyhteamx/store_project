@@ -35,6 +35,8 @@ configure(allprojects) { project ->
     ext.springBootDruidVersion      = '1.1.9'
     ext.lombokVersion               = '1.16.20'
     ext.springWebVersion            = '5.0.5.RELEASE'
+    ext.lombokVersion               = '1.16.16'
+    ext.mysqlVersion                = '5.1.32'
     
     apply plugin: "java"
     apply plugin: 'idea'
@@ -109,8 +111,13 @@ project(":microservice-store-service-user") {
 
     dependencies {
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
-        compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
+        //compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
+        compile("org.springframework.boot:spring-boot-starter-data-jpa")
         compile("org.springframework.boot:spring-boot-starter-web")
+        compile("org.projectlombok:lombok:${lombokVersion}")
+        compile("mysql:mysql-connector-java:${mysqlVersion}")
+        compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
+
         //compile("org.springframework.cloud:spring-cloud-starter-feign")
 
     }

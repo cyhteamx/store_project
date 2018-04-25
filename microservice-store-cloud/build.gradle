@@ -96,7 +96,7 @@ project(":microservice-store-web-admin") {
     description = "microservice-store-web-admin"
 
     dependencies {
-        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.M8")
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
         //compile("org.springframework:spring-web:${springWebVersion}")
         compile("org.springframework.boot:spring-boot-starter-web")
 
@@ -104,11 +104,11 @@ project(":microservice-store-web-admin") {
     }
 }
 
-project(":microservice-store-user") {
-    description = "microservice-store-user"
+project(":microservice-store-service-user") {
+    description = "microservice-store-service-user"
 
     dependencies {
-        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.M8")
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
         compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
         compile("org.springframework.boot:spring-boot-starter-web")
         //compile("org.springframework.cloud:spring-cloud-starter-feign")
@@ -116,8 +116,8 @@ project(":microservice-store-user") {
     }
 }
 
-project(":microservice-store-user-api") {
-    description = "microservice-store-user-api"
+project(":microservice-store-service-user-api") {
+    description = "microservice-store-service-user-api"
 
     dependencies {
 
@@ -137,7 +137,7 @@ project(":microservice-store-zuul") {
     description = "microservice-store-zuul"
 
     dependencies {
-        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.0.0.M8")
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
         compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
         compile("org.springframework.boot:spring-boot-starter-web")
 

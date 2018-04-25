@@ -4,6 +4,6 @@ include 'microservice-store-eureka'
 include 'microservice-store-zuul'
 include 'microservice-store-common'
 include 'microservice-store-web-admin'
-include 'microservice-store-user-api'
-include 'microservice-store-user'
+include 'microservice-store-service-user-api'
+include 'microservice-store-service-user'
 

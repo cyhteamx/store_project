@@ -1,9 +1,9 @@
 package com.store.service.impl;
 
 
-import com.store.dao.StudentDao;
+import com.store.dao.IStudentDao;
 import com.store.entity.Student;
-import com.store.repository.StudentRepository;
+import com.store.repository.IStudentRepository;
 import com.store.service.IStudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentServiceImpl implements IStudentService {
 	@Autowired
-	private StudentDao studentDao;
+	private IStudentDao studentDao;
 	
 	@Autowired
-	private StudentRepository stuRepository;
+	private IStudentRepository stuRepository;
 	
 	public Student findByNameJpa(String name) {
 		System.out.println("Service:findByNameJpa..."+name);

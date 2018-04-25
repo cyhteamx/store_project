@@ -1,7 +1,7 @@
 package com.store.dao.impl;
 
 
-import com.store.dao.StudentDao;
+import com.store.dao.IStudentDao;
 import com.store.entity.Student;
 import com.store.mapper.IStudentMapper;
 import com.store.mapper.IStudentMapperNo;
@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Repository
-public class StudentDaoImpl implements StudentDao {
+public class StudentDaoImpl implements IStudentDao {
 	
 	@Autowired
 	private JdbcTemplate jdbcTemplateObject;

@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: microservice-store-zuul
+    name: msa-store-zuul
 
 eureka:
   client:
@@ -15,7 +15,11 @@ zuul:
     admin:
       path: /store-admin/**
       #url: http://localhost:8777
-      serviceId: microservice-store-web-admin
+      serviceId: msa-store-admin
+    admin:
+      path: /store-user/**
+        #url: http://localhost:8777
+      serviceId: msa-store-user
 
 #ribbon:
 #  eureka:

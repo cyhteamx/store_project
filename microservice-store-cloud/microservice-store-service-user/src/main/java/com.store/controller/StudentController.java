@@ -1,19 +1,21 @@
 package com.store.controller;
 
 import com.store.entity.Student;
-import com.store.repository.StudentRepository;
+import com.store.repository.IStudentRepository;
 import com.store.service.IStudentService;
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 @RestController
 public class StudentController {
 
-	@Autowired
-	private StudentRepository stuRepository;
-	@Autowired
+	@Resource
+	private IStudentRepository stuRepository;
+	@Resource
 	private IStudentService studentService;
 	
 	@GetMapping(value="/stu/{name}")

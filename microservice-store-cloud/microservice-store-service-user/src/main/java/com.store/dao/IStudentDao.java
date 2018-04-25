@@ -3,7 +3,7 @@ package com.store.dao;
 
 import com.store.entity.Student;
 
-public interface StudentDao {
+public interface IStudentDao {
 	
 	Student findByNameJdbc(String name);
 	Student findByNameMybatis(String name);

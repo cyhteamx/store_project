@@ -2,9 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.application.mapper.StudentMapper">
+<mapper namespace="com.store.mapper.IStudentMapperNo">
 	
-	<resultMap type="com.application.entity.Student" id="stuMap">
+	<resultMap type="com.store.entity.Student" id="stuMap">
 		<id property="ID" column="ID"/>
 		<result property="name" column="name"/>
 		<result property="password" column="password"/>

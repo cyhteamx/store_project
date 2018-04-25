@@ -2,7 +2,7 @@ package com.store.controller;
 
 import com.store.entity.Student;
 import com.store.repository.StudentRepository;
-import com.store.service.StudentService;
+import com.store.service.IStudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +14,7 @@ public class StudentController {
 	@Autowired
 	private StudentRepository stuRepository;
 	@Autowired
-	private StudentService studentService;
+	private IStudentService studentService;
 	
 	@GetMapping(value="/stu/{name}")
 	public Student stufindOne(@PathVariable("name") String name){

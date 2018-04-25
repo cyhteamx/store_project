@@ -69,7 +69,7 @@ configure(allprojects) { project ->
     dependencyManagement {
         imports {
             mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-            mavenBom "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
+//            mavenBom "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
 
         }
     }
@@ -117,9 +117,6 @@ project(":microservice-store-service-user") {
         compile("org.projectlombok:lombok:${lombokVersion}")
         compile("mysql:mysql-connector-java:${mysqlVersion}")
         compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
-
-        //compile("org.springframework.cloud:spring-cloud-starter-feign")
-
     }
 }
 
@@ -127,6 +124,18 @@ project(":microservice-store-service-user-api") {
     description = "microservice-store-service-user-api"
 
     dependencies {
+        compile(project(":microservice-store-common"))
+        compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+        compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+    }
+}
+
+project(":microservice-store-service-user") {
+    description = "microservice-store-service-user"
+
+    dependencies {
+        compile(project(":microservice-store-service-user-api"))
+        compile("org.springframework.boot:spring-boot-starter-web")
 
     }
 }

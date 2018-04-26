@@ -1,4 +1,4 @@
-package com.store.user;
+package com.store;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

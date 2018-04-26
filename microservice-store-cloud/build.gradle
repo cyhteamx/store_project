@@ -94,7 +94,7 @@ configure(allprojects) { project ->
 
 }
 
-project(":microservice-store-web-admin") {
+project("microservice-store-web-admin") {
     description = "microservice-store-web-admin"
 
     dependencies {
@@ -107,7 +107,7 @@ project(":microservice-store-web-admin") {
     }
 }
 
-project(":microservice-store-service-user") {
+/*project(":microservice-store-service-user") {
     description = "microservice-store-service-user"
 
     dependencies {
@@ -118,9 +118,9 @@ project(":microservice-store-service-user") {
         compile("mysql:mysql-connector-java:${mysqlVersion}")
         compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
     }
-}
+}*/
 
-project(":microservice-store-service-user-api") {
+project("microservice-store-service-user-api") {
     description = "microservice-store-service-user-api"
 
     dependencies {
@@ -130,17 +130,20 @@ project(":microservice-store-service-user-api") {
     }
 }
 
-project(":microservice-store-service-user") {
+project("microservice-store-service-user") {
     description = "microservice-store-service-user"
 
     dependencies {
         compile(project(":microservice-store-service-user-api"))
         compile("org.springframework.boot:spring-boot-starter-web")
-
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+        compile("org.springframework.boot:spring-boot-starter-data-jpa")
+        compile("org.projectlombok:lombok:${lombokVersion}")
+        compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
     }
 }
 
-project(":microservice-store-eureka") {
+project("microservice-store-eureka") {
     description = "microservice-store-eureka"
 
     dependencies {
@@ -149,7 +152,7 @@ project(":microservice-store-eureka") {
     }
 }
 
-project(":microservice-store-zuul") {
+project("microservice-store-zuul") {
     description = "microservice-store-zuul"
 
     dependencies {
@@ -160,7 +163,7 @@ project(":microservice-store-zuul") {
     }
 }
 
-project(":microservice-store-common") {
+project("microservice-store-common") {
     description = "microservice-store-common"
 
     dependencies {

@@ -2,7 +2,7 @@ package com.store.controller;
 
 
 import com.store.dto.MenuDTO;
-import com.store.service.IUserService;
+import com.store.user.service.IUserService;
 import com.store.utils.ResultVOUtil;
 import com.store.vo.ResultVO;
 import lombok.extern.slf4j.Slf4j;

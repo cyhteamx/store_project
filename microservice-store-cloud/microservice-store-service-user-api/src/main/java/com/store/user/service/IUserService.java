@@ -1,9 +1,8 @@
-package com.store.service;
+package com.store.user.service;
 
 
-import com.store.service.hystrix.UserServiceHystrix;
+import com.store.user.service.hystrix.UserServiceHystrix;
 import com.store.dto.MenuDTO;
-import com.store.vo.ResultVO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 

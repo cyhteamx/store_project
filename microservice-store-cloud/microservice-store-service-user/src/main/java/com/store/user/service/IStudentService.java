@@ -1,4 +1,4 @@
-package com.store.service;
+package com.store.user.service;
 
 
 import com.store.entity.Student;

@@ -1,4 +1,4 @@
-package com.store.service.impl;
+package com.store.user.service.impl;
 
 
 
@@ -6,8 +6,7 @@ import com.store.converter.Menu2MenuDTOConverter;
 import com.store.dto.MenuDTO;
 import com.store.mapper.ITbMenuMapper;
 import com.store.model.Menu;
-import com.store.service.IUserService;
-import com.store.vo.ResultVO;
+import com.store.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -2,7 +2,7 @@ package com.store.controller;
 
 import com.store.entity.Student;
 import com.store.repository.IStudentRepository;
-import com.store.service.IStudentService;
+import com.store.user.service.IStudentService;
 //import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

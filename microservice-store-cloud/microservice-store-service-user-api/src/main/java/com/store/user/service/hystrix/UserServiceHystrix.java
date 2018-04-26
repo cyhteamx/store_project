@@ -1,7 +1,7 @@
-package com.store.service.hystrix;
+package com.store.user.service.hystrix;
 
 import com.store.dto.MenuDTO;
-import com.store.service.IUserService;
+import com.store.user.service.IUserService;
 import com.store.vo.ResultVO;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +16,7 @@ import java.util.List;
 public class UserServiceHystrix implements IUserService {
 
     @Override
-    public ResultVO<List<MenuDTO>> getMenuList() {
+    public List<MenuDTO> getMenuList() {
         return null;
     }
 }

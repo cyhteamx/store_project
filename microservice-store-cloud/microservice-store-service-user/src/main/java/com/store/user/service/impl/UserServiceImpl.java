@@ -2,7 +2,7 @@ package com.store.user.service.impl;
 
 
 
-import com.store.converter.Menu2MenuDTOConverter;
+/*import com.store.converter.Menu2MenuDTOConverter;
 import com.store.dto.MenuDTO;
 import com.store.mapper.ITbMenuMapper;
 import com.store.model.Menu;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
-public class UserServiceImpl implements IUserService {
+@RestController*/
+public class UserServiceImpl /*implements IUserService*/ {
 
-	@Autowired
+	/*@Autowired
 	private ITbMenuMapper tbMenuMapper;
 
 	@Override
@@ -23,5 +23,5 @@ public class UserServiceImpl implements IUserService {
 		List<Menu> menus = tbMenuMapper.getMenuList();
 		List<MenuDTO> menuDTOList = Menu2MenuDTOConverter.convert(menus);
 		return menuDTOList;
-	}
+	}*/
 }

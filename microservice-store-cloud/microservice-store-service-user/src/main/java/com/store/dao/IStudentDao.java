@@ -1,11 +1,8 @@
 package com.store.dao;
 
-
-import com.store.entity.Student;
+import com.store.model.Student;
 
 public interface IStudentDao {
 	
-	Student findByNameJdbc(String name);
 	Student findByNameMybatis(String name);
-	Student findByNameMybatisNo(String name);
 }

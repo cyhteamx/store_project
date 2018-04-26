@@ -1,16 +1,12 @@
-package com.store.entity;
+package com.store.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import lombok.Data;
 
-@Entity
+//@Entity
 @Data
 public class Student {
-    @Id
-    @GeneratedValue
+    //@Id
+    //@GeneratedValue
     private String ID;
     /*public String getID() {
 		return ID;
@@ -18,7 +14,7 @@ public class Student {
 	public void setID(String iD) {
 		ID = iD;
 	}*/
-	@Column
+	//@Column
     private String name;
     /*public String getName() {
 		return name;
@@ -26,7 +22,7 @@ public class Student {
 	public void setName(String name) {
 		this.name = name;
 	}*/
-	@Column
+	//@Column
     private String password;
     /*public String getPassword() {
 		return password;
@@ -34,7 +30,7 @@ public class Student {
 	public void setPassword(String password) {
 		this.password = password;
 	}*/
-	@Column
+	//@Column
     private int age;
     /*public int getAge() {
 		return age;
@@ -42,7 +38,7 @@ public class Student {
 	public void setAge(int age) {
 		this.age = age;
 	}*/
-	@Column
+	//@Column
     private String remark;
 	/*public String getRemark() {
 		return remark;

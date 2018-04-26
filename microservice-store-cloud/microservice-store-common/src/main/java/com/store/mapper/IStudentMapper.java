@@ -1,11 +1,11 @@
 package com.store.mapper;
 
-import com.store.entity.Student;
+import com.store.model.Student;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 
-public interface IStudentMapper{
+public interface IStudentMapper {
 
 	@Select("SELECT * FROM student where name=#{name}")
 	@Results({

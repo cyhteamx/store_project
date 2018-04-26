@@ -98,8 +98,8 @@ project("microservice-store-web-admin") {
     description = "microservice-store-web-admin"
 
     dependencies {
-        compile(project(":microservice-store-common"))
-        compile(project(":microservice-store-service-user-api"))
+        //compile(project(":microservice-store-common"))
+        //compile(project(":microservice-store-service-user-api"))
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
         compile("org.springframework.boot:spring-boot-starter-web")
         compile("org.projectlombok:lombok:${lombokVersion}")
@@ -134,12 +134,15 @@ project("microservice-store-service-user") {
     description = "microservice-store-service-user"
 
     dependencies {
-        compile(project(":microservice-store-service-user-api"))
-        compile("org.springframework.boot:spring-boot-starter-web")
+        //compile(project(":microservice-store-service-user-api"))
+        compile(project(":microservice-store-common"))
+        //compile("org.springframework.boot:spring-boot-starter-web")
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
-        compile("org.springframework.boot:spring-boot-starter-data-jpa")
-        compile("org.projectlombok:lombok:${lombokVersion}")
+        //compile("org.springframework.boot:spring-boot-starter-data-jpa")
+        //compile("org.projectlombok:lombok:${lombokVersion}")
         compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
+        compile("mysql:mysql-connector-java:${mysqlVersion}")
+
     }
 }
 
@@ -170,11 +173,11 @@ project("microservice-store-common") {
         compile("org.springframework.boot:spring-boot-starter-web")
 //        compile("org.springframework.boot:spring-boot-starter-data-jpa")
 
-        compile("mysql:mysql-connector-java:${mysqlVersion}")
-        compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
+        //compile("mysql:mysql-connector-java:${mysqlVersion}")
+        //compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
         compile("com.github.pagehelper:pagehelper-spring-boot-starter:${springBootpagehelperVersion}")
         compile("com.alibaba:druid-spring-boot-starter:${springBootDruidVersion}")
-        compileOnly("org.projectlombok:lombok:${lombokVersion}")
+        compile("org.projectlombok:lombok:${lombokVersion}")
         compile("com.google.code.gson:gson:${gsonVersion}")
 //        compile group: 'com.alibaba', name: 'druid-spring-boot-starter', version: '1.1.9'
 //        compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul") compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'

@@ -1,16 +1,16 @@
 package com.store.converter;
 
-import com.store.dto.MenuDTO;
+/*import com.store.dto.MenuDTO;
 import com.store.enums.MenuNodeEnum;
 import com.store.model.Menu;
 import org.springframework.beans.BeanUtils;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List;*/
 
 public class Menu2MenuDTOConverter {
 
-    public static List<MenuDTO> convert(List<Menu> menus) {
+    /*public static List<MenuDTO> convert(List<Menu> menus) {
         List<MenuDTO> MenuDTOs = new ArrayList<MenuDTO>();
 
         List<Menu> oneLevels = new ArrayList<Menu>();
@@ -40,5 +40,5 @@ public class Menu2MenuDTOConverter {
             }
         }
         return items;
-    }
+    }*/
 }

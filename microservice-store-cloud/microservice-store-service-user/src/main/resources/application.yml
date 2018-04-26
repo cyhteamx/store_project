@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: microservice-store-service-user
+    name: msa-store-user
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/store?useUnicode=true&amp;characterEncoding=UTF-8

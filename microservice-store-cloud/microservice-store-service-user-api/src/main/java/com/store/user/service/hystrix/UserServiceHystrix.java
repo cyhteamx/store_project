@@ -1,10 +1,8 @@
 package com.store.user.service.hystrix;
 
-import com.store.dto.MenuDTO;
+import com.store.model.Student;
 import com.store.user.service.IUserService;
-import com.store.vo.ResultVO;
 import org.springframework.stereotype.Component;
-
 import java.util.List;
 
 /**
@@ -15,8 +13,15 @@ import java.util.List;
 @Component
 public class UserServiceHystrix implements IUserService {
 
+
     @Override
-    public List<MenuDTO> getMenuList() {
+    public List in() {
+        return null;
+    }
+
+    @Override
+    public Student findByNameMybatis(String name) {
+        System.out.println("yyy:"+name);
         return null;
     }
 }

@@ -1,10 +1,10 @@
 package com.store.utils;
 
-import javax.servlet.http.Cookie;
+/*import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
-import java.util.Map;
+import java.util.Map;*/
 
 public class CookieUtil {
 
@@ -15,7 +15,7 @@ public class CookieUtil {
      * @param value
      * @param maxAge
      */
-    public static void set(HttpServletResponse response,
+    /*public static void set(HttpServletResponse response,
                            String name,
                            String value,
                            int maxAge) {
@@ -23,7 +23,7 @@ public class CookieUtil {
         cookie.setPath("/");
         cookie.setMaxAge(maxAge);
         response.addCookie(cookie);
-    }
+    }*/
 
     /**
      * 获取cookie
@@ -31,7 +31,7 @@ public class CookieUtil {
      * @param name
      * @return
      */
-    public static Cookie get(HttpServletRequest request,
+    /*public static Cookie get(HttpServletRequest request,
                            String name) {
         Map<String, Cookie> cookieMap = readCookieMap(request);
         if (cookieMap.containsKey(name)) {
@@ -39,14 +39,14 @@ public class CookieUtil {
         }else {
             return null;
         }
-    }
+    }*/
 
     /**
      * 将cookie封装成Map
      * @param request
      * @return
      */
-    private static Map<String, Cookie> readCookieMap(HttpServletRequest request) {
+    /*private static Map<String, Cookie> readCookieMap(HttpServletRequest request) {
         Map<String, Cookie> cookieMap = new HashMap<>();
         Cookie[] cookies = request.getCookies();
         if (cookies != null) {
@@ -55,5 +55,5 @@ public class CookieUtil {
             }
         }
         return cookieMap;
-    }
+    }*/
 }

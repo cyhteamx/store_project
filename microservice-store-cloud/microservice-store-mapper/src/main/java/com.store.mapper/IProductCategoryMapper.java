@@ -1,6 +1,8 @@
 package com.store.mapper;
 
+import com.alibaba.druid.sql.visitor.functions.Insert;
 import com.store.model.ProductCategory;
+import net.sf.jsqlparser.statement.select.Select;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -8,7 +10,7 @@ import java.util.Map;
 
 public interface IProductCategoryMapper {
 
-    @Insert("insert into product_category(category_name, category_type) values (#{categoryName, jdbcType=VARCHAR}, #{category_type, jdbcType=INTEGER})")
+    /*@Insert("insert into product_category(category_name, category_type) values (#{categoryName, jdbcType=VARCHAR}, #{category_type, jdbcType=INTEGER})")
     int insertByMap(Map<String, Object> map);
 
     @Insert("insert into product_category(category_name, category_type) values (#{categoryName, jdbcType=VARCHAR}, #{categoryType, jdbcType=INTEGER})")
@@ -41,7 +43,7 @@ public interface IProductCategoryMapper {
     int deleteByCategoryType(Integer categoryType);
 
     //xml
-    ProductCategory selectByCategoryType(Integer categoryType);
+    ProductCategory selectByCategoryType(Integer categoryType);*/
 
 
 }

@@ -37,6 +37,7 @@ configure(allprojects) { project ->
     ext.lombokVersion               = '1.16.16'
     ext.mysqlVersion                = '5.1.32'
     ext.gsonVersion                 = '2.8.2'
+    ext.springBootAdminVersion      = '1.5.0'
     
     apply plugin: "java"
     apply plugin: 'idea'
@@ -99,10 +100,10 @@ project("microservice-store-web-admin") {
 
     dependencies {
         //compile(project(":microservice-store-common"))
-        //compile(project(":microservice-store-service-user-api"))
+        compile(project(":microservice-store-service-user-api"))
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
         compile("org.springframework.boot:spring-boot-starter-web")
-        compile("org.projectlombok:lombok:${lombokVersion}")
+        //compile("org.projectlombok:lombok:${lombokVersion}")
 //        compile("org.springframework.boot:spring-boot-starter-security")
     }
 }
@@ -126,7 +127,7 @@ project("microservice-store-service-user-api") {
     dependencies {
         compile(project(":microservice-store-common"))
         compile('org.springframework.cloud:spring-cloud-starter-openfeign')
-        compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+        //compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
     }
 }
 
@@ -134,14 +135,17 @@ project("microservice-store-service-user") {
     description = "microservice-store-service-user"
 
     dependencies {
-        //compile(project(":microservice-store-service-user-api"))
-        compile(project(":microservice-store-common"))
-        //compile("org.springframework.boot:spring-boot-starter-web")
+        compile(project(":microservice-store-service-user-api"))
+        compile(project(":microservice-store-mapper"))
+        compile("org.projectlombok:lombok:${lombokVersion}")
+        //compile(project(":microservice-store-common"))
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
         //compile("org.springframework.boot:spring-boot-starter-data-jpa")
-        //compile("org.projectlombok:lombok:${lombokVersion}")
         compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
         compile("mysql:mysql-connector-java:${mysqlVersion}")
+        compile("org.springframework.boot:spring-boot-starter-web")
+        compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+
 
     }
 }
@@ -170,17 +174,29 @@ project("microservice-store-common") {
     description = "microservice-store-common"
 
     dependencies {
-        compile("org.springframework.boot:spring-boot-starter-web")
+        //compile("org.springframework.boot:spring-boot-starter-web")
 //        compile("org.springframework.boot:spring-boot-starter-data-jpa")
+        compile("org.projectlombok:lombok:${lombokVersion}")
+        compile("com.google.code.gson:gson:${gsonVersion}")
 
         //compile("mysql:mysql-connector-java:${mysqlVersion}")
         //compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
-        compile("com.github.pagehelper:pagehelper-spring-boot-starter:${springBootpagehelperVersion}")
-        compile("com.alibaba:druid-spring-boot-starter:${springBootDruidVersion}")
-        compile("org.projectlombok:lombok:${lombokVersion}")
-        compile("com.google.code.gson:gson:${gsonVersion}")
+
 //        compile group: 'com.alibaba', name: 'druid-spring-boot-starter', version: '1.1.9'
 //        compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul") compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
+    }
+}
+
+project("microservice-store-mapper") {
+    description = "microservice-store-mapper"
+
+    dependencies {
+        compile(project(":microservice-store-common"))
+
+        compile("com.github.pagehelper:pagehelper-spring-boot-starter:${springBootpagehelperVersion}")
+        compile("com.alibaba:druid-spring-boot-starter:${springBootDruidVersion}")
+        compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
+        compile("mysql:mysql-connector-java:${mysqlVersion}")
     }
 }
 
@@ -216,7 +232,6 @@ configure(rootProject) {
 //            }
 //        }
 //    }
-
 
 }
 

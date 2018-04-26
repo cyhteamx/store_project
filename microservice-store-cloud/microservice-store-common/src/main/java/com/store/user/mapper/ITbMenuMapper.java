@@ -5,6 +5,8 @@ import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 
+import java.util.List;
+
 public interface ITbMenuMapper {
 
 	@Select("SELECT * FROM tb_menu")
@@ -15,6 +17,6 @@ public interface ITbMenuMapper {
 		@Result(property="age",column="age"),
 		@Result(property="remark",column="remark")
 	})
-	Menu findByMybatis(String name);
+	List<Menu> getMenuList();
 
 }

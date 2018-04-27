@@ -57,7 +57,7 @@
     // this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
     // let selectedGoods = window.selectedGoods;
     // selectedGoods = selectedGoods ? JSON.parse(selectedGoods) : [];
-    this.$http.get('/sell/menu/list').then((response) => {
+    this.$http.get('/store-admin/menu/list').then((response) => {
       response = response.body;
       if (response.code === ERR_OK) {
         this.items = response.data;

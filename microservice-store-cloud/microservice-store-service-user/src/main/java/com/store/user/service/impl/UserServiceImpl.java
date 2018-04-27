@@ -1,18 +1,17 @@
 package com.store.user.service.impl;
 
-//import com.store.converter.Menu2MenuDTOConverter;
+
+import com.store.converter.Menu2MenuDTOConverter;
 import com.store.dto.MenuDTO;
-//import com.store.mapper.ITbMenuMapper;
-//import com.store.model.Menu;
+import com.store.mapper.ITbMenuMapper;
+import com.store.model.Menu;
 import com.store.mapper.IStudentMapper;
 import com.store.model.Student;
 import com.store.user.service.IUserService;
-//import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,18 +19,17 @@ import java.util.List;
 @RestController
 public class UserServiceImpl implements IUserService {
 
-	//@Autowired
-	//private ITbMenuMapper tbMenuMapper;
-
-    @Resource
+    @Autowired
     private IStudentMapper studentMapper;
+
+	@Autowired
+	private ITbMenuMapper tbMenuMapper;
 
 	//@Override
 	public List<MenuDTO> getMenuList() {
-		/*List<Menu> menus = tbMenuMapper.getMenuList();
+		List<Menu> menus = tbMenuMapper.getMenuList();
 		List<MenuDTO> menuDTOList = Menu2MenuDTOConverter.convert(menus);
-		return menuDTOList;*/
-		return null;
+		return menuDTOList;
 	}
 
     @Override
@@ -49,4 +47,5 @@ public class UserServiceImpl implements IUserService {
 	    System.out.println("xxxxx:"+name);
         return studentMapper.findByMybatis(name);
     }
+
 }

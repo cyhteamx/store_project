@@ -9,7 +9,6 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 @SpringBootApplication
 @EnableEurekaClient
 @MapperScan("com.store.mapper")
-@EnableHystrix
 public class UserApplication {
 
 	public static void main(String[] args) {

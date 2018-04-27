@@ -16,8 +16,8 @@ zuul:
       path: /store-admin/**
       #url: http://localhost:8777
       serviceId: microservice-store-web-admin
-    #admin2:
-      #path: /store-user/**
+    admin2:
+      path: /store-user/**
         #url: http://localhost:8777
       #serviceId: microservice-store-service-user
 

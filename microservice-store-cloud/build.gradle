@@ -169,19 +169,6 @@ project("microservice-store-common") {
     }
 }
 
-project("microservice-store-mapper") {
-    description = "microservice-store-mapper"
-
-    dependencies {
-        compile(project(":microservice-store-common"))
-
-        compile("com.github.pagehelper:pagehelper-spring-boot-starter:${springBootpagehelperVersion}")
-        compile("com.alibaba:druid-spring-boot-starter:${springBootDruidVersion}")
-        compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootMyBatisVersion}")
-        compile("mysql:mysql-connector-java:${mysqlVersion}")
-    }
-}
-
 configure(rootProject) {
     description = "microservice-store-cloud"
 

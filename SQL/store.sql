@@ -2,6 +2,7 @@ use store;
 
 DROP TABLE IF EXISTS `TB_MENU`;
 
+-- 菜单表
 CREATE TABLE `TB_MENU` (
   `ID` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '菜单ID',
   `NAME` varchar(90) DEFAULT NULL COMMENT '菜单名称',

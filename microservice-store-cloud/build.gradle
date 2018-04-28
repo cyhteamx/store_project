@@ -141,7 +141,9 @@ project("microservice-store-zuul") {
     dependencies {
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
         compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
-        compile("org.springframework.boot:spring-boot-starter-web")
+//        compile("org.springframework.cloud:spring-cloud-starter-oauth2")
+
+//        compile("org.springframework.boot:spring-boot-starter-web")
 //        compile("org.springframework.boot:spring-boot-starter-security")
     }
 }

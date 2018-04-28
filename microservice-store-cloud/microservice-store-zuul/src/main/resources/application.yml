@@ -12,14 +12,14 @@ eureka:
 
 zuul:
   routes:
-    admin1:
-      path: /store-admin/**
-      #url: http://localhost:8777
+    admin:
+      path: /admin/**
       serviceId: microservice-store-web-admin
-    admin2:
-      path: /store-user/**
-        #url: http://localhost:8777
-      #serviceId: microservice-store-service-user
+    user:
+      path: /user/**
+      stripPrefix: false
+      serviceId: microservice-store-service-user
+
 
 #ribbon:
 #  eureka:

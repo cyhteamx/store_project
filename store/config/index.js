@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     // proxyTable: {},
     proxyTable: {
-      '/store-admin': {
+      '/admin': {
         target: 'http://127.0.0.1:8888/'
         // changeOrigin: true, //开启代理
         // pathRewrite: { '^/sell': '/sell' }  //这里重写路径/run就代理到对应地址

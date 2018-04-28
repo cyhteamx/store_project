@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
 
-@FeignClient(value="microservice-store-service-user", fallback = UserServiceHystrix.class)
+@FeignClient(value="microservice-store-zuul", fallback = UserServiceHystrix.class)
 public interface IUserService {
 
     @GetMapping("/all")
@@ -20,7 +20,7 @@ public interface IUserService {
     @RequestMapping(value = "/hello/{name}",method = RequestMethod.POST)
     Student findByNameMybatis(@PathVariable("name") String name);
 
-    @RequestMapping(value = "/menu/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/user/menu/list", method = RequestMethod.GET)
     List<MenuDTO> getMenuList();
 
 }

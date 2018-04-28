@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @RestController
-@RequestMapping("/menu")
 @Slf4j
 public class IndexController {
 
@@ -26,7 +25,7 @@ public class IndexController {
     private IUserService userService;
 
     //订单列表
-    @GetMapping("/list")
+    @GetMapping("/menu/list")
     public ResultVO<List<MenuDTO>> list() {
         List<MenuDTO> list = userService.getMenuList();
         return ResultVOUtil.success(userService.getMenuList());

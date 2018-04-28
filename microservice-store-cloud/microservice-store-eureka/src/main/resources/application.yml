@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: msa-store-eureka
+    name: microservice-store-eureka
 
 eureka:
   client:

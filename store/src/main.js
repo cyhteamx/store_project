@@ -6,15 +6,16 @@ import VueResource from 'vue-resource';
 import router from './router';
 import axios from 'axios';
 import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';    // 默认主题
-import "babel-polyfill";
+// 默认主题
+import 'element-ui/lib/theme-chalk/index.css';
+import 'babel-polyfill';
 
 Vue.use(ElementUI, { size: 'small' });
 Vue.prototype.$axios = axios;
 
 Vue.use(VueResource);
 
-//使用钩子函数对路由进行权限跳转
+// 使用钩子函数对路由进行权限跳转
 router.beforeEach((to, from, next) => {
   if(to.meta.permission){
     const role = localStorage.getItem('ms_username');

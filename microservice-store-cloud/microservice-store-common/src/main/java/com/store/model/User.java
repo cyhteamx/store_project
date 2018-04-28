@@ -4,7 +4,7 @@ import lombok.Data;
 
 //@Entity
 @Data
-public class Student {
+public class User {
     //@Id
     //@GeneratedValue
     private String ID;

@@ -24,7 +24,7 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'semi': [0],//语句强制分号结尾
     'no-mixed-spaces-and-tabs': [2, false],//禁止混用tab和空格
     'no-tabs': 'off',

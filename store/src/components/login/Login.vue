@@ -18,7 +18,13 @@
 </template>
 
 <script>
-    export default {
+  import bus from '../common/bus';
+
+  var config = require('config')
+  config = process.env.NODE_ENV === 'development' ? config.dev : config.build
+  const ERR_OK = 0;
+
+  export default {
         data: function() {
             return {
                 ruleForm: {
@@ -37,16 +43,28 @@
         },
         methods: {
             submitForm(formName) {
-                const self = this;
-                self.$refs[formName].validate((valid) => {
-                    if (valid) {
-                        localStorage.setItem('ms_username', self.ruleForm.username);
-                        self.$router.push('/store');
+              const self = this;
+              // self.$refs[formName].validate((valid) => {
+                this.$http.get('/admin/login', {
+                  params: {
+                    name: self.ruleForm.username,
+                    pass: self.ruleForm.password
+                  }
+              }).then((response) => {
+                  response = response.body;
+                  if (response.code === ERR_OK) {
+                    if (response.data === null) {
+                      alert('user/pass-error.');
                     } else {
-                        console.log('error submit!!');
-                        return false;
+                      localStorage.setItem('ms_username', self.ruleForm.username);
+                      self.$router.push('/store');
                     }
-                });
+                  } else {
+                    alert('error submit!!');
+                    return false;
+                  }
+                })
+             // };
             }
         }
     }

@@ -43,7 +43,7 @@
       bus.$on('collapse', msg => {
         this.collapse = msg;
       });
-    //如果url里有openid, 设置进cookie
+    // 如果url里有openid, 设置进cookie
     // var openid = this.$route.query.openid;
     // if(typeof openid !== 'undefined') {
     //   var exp = new Date();
@@ -71,7 +71,6 @@
     }
   }
 </script>
-
 
 <style scoped>
   .sidebar{

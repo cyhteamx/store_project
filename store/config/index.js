@@ -27,9 +27,9 @@ module.exports = {
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
     cssSourceMap: false,
-    sellUrl: 'http://cyh.nat300.top:8080/',
+    /*sellUrl: 'http://cyh.nat300.top:8080/',
     openidUrl: 'http://cyh.nat300.top/sell/wechat/authorize',
-    wechatPayUrl: 'http://cyh.nat300.top/sell/pay/create'
+    wechatPayUrl: 'http://cyh.nat300.top/sell/pay/create'*/
 
     /////////////////////
     //

@@ -1,7 +1,7 @@
 package com.store.user.service.hystrix;
 
 import com.store.dto.MenuDTO;
-import com.store.model.Student;
+import com.store.model.User;
 import com.store.user.service.IUserService;
 import org.springframework.stereotype.Component;
 import java.util.List;
@@ -14,15 +14,14 @@ import java.util.List;
 @Component
 public class UserServiceHystrix implements IUserService {
 
-
     @Override
     public List in() {
         return null;
     }
 
     @Override
-    public Student findByNameMybatis(String name) {
-        System.out.println("yyy:"+name);
+    public User findByNameMybatis(User user) {
+        System.out.println(user.getName()+":_:"+user.getPassword());
         return null;
     }
 

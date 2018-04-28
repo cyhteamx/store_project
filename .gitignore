@@ -6,3 +6,4 @@
 *.log
 /microservice-store-cloud/*/out
 .DS_Store  
+microservice-store-cloud/build.gradle

@@ -12,6 +12,12 @@ eureka:
 
 zuul:
   routes:
+    auth:
+      path: /auth/**
+#      sensitiveHeaders:
+#      sensitive-headers:
+      stripPrefix: true
+      serviceId: microservice-store-auth
     admin:
       path: /admin/**
       serviceId: microservice-store-web-admin
@@ -19,8 +25,50 @@ zuul:
       path: /user/**
       stripPrefix: false
       serviceId: microservice-store-service-user
+#  add-proxy-headers: true
+  add-host-header: true
+  sensitive-headers:
+#zuul.sensitiveHeaders: Cookie,Set-Cookie,Authorization # zuul.sensitive-headers=
 
+client:
+  secret: store
+
+while-list:
+  uriWhiteList:
+    - /admin/login
+    - /admin/menu/list
+    - /user/menu/list
+    - /auth/oauth/token
+    - /auth/oauth/authorize
+    - /auth/oauth/user
+#    - /auth/client/token
+    - /auth/jwt/token
+
+
+
+
+#security:
+##  basic:
+##    enabled: false
+#  oauth2:
+#    client:
+#      access-token-uri: http://localhost:8888/auth/oauth/token
+#      user-authorization-uri: http://localhost:8888/auth/oauth/authorize
+#      client-id: webapp
+##      client-id: eagleeye
+##      client-secret: thisissecret
+#    resource:
+#      user-info-uri:  http://localhost:8888/auth/user
+#      prefer-token-info: false
+#
+#
+#endpoints:
+#  restart:
+#    enabled: true
 
 #ribbon:
 #  eureka:
 #    enabled: false #配置zuul路由时用将此属性设置为false
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 70000
+

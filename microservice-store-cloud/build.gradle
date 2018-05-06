@@ -1,7 +1,7 @@
 buildscript {
     ext {
         springBootVersion = '2.0.1.RELEASE'
-        springCloudVersion = 'Finchley.M9'
+        springCloudVersion = 'Finchley.RC1'
     }
     repositories {
         //mavenCentral()
@@ -26,7 +26,7 @@ configure(allprojects) { project ->
     group = "com.store"
     version = version
 
-    ext.springCloudVersion          = 'Finchley.M9'
+    ext.springCloudVersion          = 'Finchley.RC1'
     ext.springBootVersion           = '2.0.1.RELEASE'
     ext.junitVersion                = '4.12'
     ext.mysqlVersion                = '8.0.11'
@@ -36,7 +36,11 @@ configure(allprojects) { project ->
     ext.lombokVersion               = '1.16.20'
     ext.gsonVersion                 = '2.8.2'
     ext.springBootAdminVersion      = '1.5.0'
+    ext.hutoolAllVersion            = '4.0.10'
+    ext.jjwtVersion                 = '0.9.0'
+    ext.fastjsonVersion             = '1.2.47'
     
+
     apply plugin: "java"
     apply plugin: 'idea'
     apply plugin: 'eclipse'
@@ -139,12 +143,22 @@ project("microservice-store-zuul") {
     description = "microservice-store-zuul"
 
     dependencies {
+        compile(project(":microservice-store-common"))
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+        compile('org.springframework.cloud:spring-cloud-starter-openfeign')
         compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
+        compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
 //        compile("org.springframework.cloud:spring-cloud-starter-oauth2")
+//        compile("org.springframework.cloud:spring-cloud-starter-security")
 
-//        compile("org.springframework.boot:spring-boot-starter-web")
-//        compile("org.springframework.boot:spring-boot-starter-security")
+//        compile("org.springframework.boot:spring-boot-devtools")
+//        compile("org.springframework.cloud:spring-cloud-starter-vault-config")
+        //        <dependency>
+        //            <groupId>org.springframework.security</groupId>
+        //            <artifactId>spring-security-data</artifactId>
+        //        </dependency>
+//        compile("org.springframework.boot:spring-boot-starter-web")   <groupId>org.springframework.boot</groupId>
+//            <artifactId>spring-boot-devtools</artifactId>  compile group: 'cn.hutool', name: 'hutool-all', version: '4.0.10'
     }
 }
 
@@ -168,8 +182,39 @@ project("microservice-store-common") {
         compile("org.springframework.boot:spring-boot-starter-web")
         compile("org.projectlombok:lombok:${lombokVersion}")
         compile("com.google.code.gson:gson:${gsonVersion}")
+        compile("org.springframework.boot:spring-boot-starter-data-redis")
+        compile("cn.hutool:hutool-all:${hutoolAllVersion}")
+        compile("io.jsonwebtoken:jjwt:${jjwtVersion}")
+        compile("com.alibaba:fastjson:${fastjsonVersion}")
+
+
+
+//        compile 'com.alibaba:fastjson:1.2.33'
     }
 }
+
+project("microservice-store-auth") {
+    description = "microservice-store-auth"
+
+    dependencies {
+        compile(project(":microservice-store-common"))
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+        compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+        compile("org.springframework.cloud:spring-cloud-starter-oauth2")
+        compile("org.springframework.cloud:spring-cloud-starter-security")
+        compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '2.3.2.RELEASE'
+
+//        compile("org.springframework.security:spring-security-data")
+//        compile('org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure')
+
+//        compile("org.springframework.boot:spring-boot-autoconfigure")
+//        compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.0.1.RELEASE'
+        compile("org.springframework.boot:spring-boot-starter-data-jpa")
+        compile("mysql:mysql-connector-java")
+
+    }
+}
+
 
 configure(rootProject) {
     description = "microservice-store-cloud"

@@ -7,3 +7,5 @@ include 'microservice-store-web-admin'
 include 'microservice-store-service-user-api'
 include 'microservice-store-service-user'
 include 'microservice-store-common-mapper'
+include 'microservice-store-auth'
+

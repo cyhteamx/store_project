@@ -1,0 +1,69 @@
+server:
+  port: 9060
+
+spring:
+  application:
+    name: microservice-store-auth
+#  zipkin:
+#      base-url: http://localhost:9050
+  jpa:
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: store
+    password: store
+    url: jdbc:mysql://127.0.0.1/store?characterEncoding=utf-8&useSSL=false
+  redis:
+    host: 127.0.0.1
+    port: 6379
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: store
+#    password: store
+#    url: jdbc:mysql://127.0.0.1/store?characterEncoding=utf-8&useSSL=false
+
+
+#     password: password
+#     database: xxx
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+###actuator认证配置 start####
+#endpoints:
+#  health:
+#    sensitive: false
+#    enabled: true
+###刷新时，关闭安全验证
+#management:
+#  security:
+#    enabled: false
+####actuator认证 end####
+#security:
+#  #白名单配置
+#  ignored: /css/**,/js/**,/images/**,/webjars/**,/**/favicon.ico,/static/**,/cancel/**,/hello,/oauth/remove
+#  oauth2:
+#    resource:
+#      filter-order: 3
+
+my-props:
+  jwtWhiteList:
+    - loginname: wm-admin
+      passwd: wm-admin
+    - loginname: wm-root
+      passwd: wm-root
+    - loginname: admin
+      passwd: admin
+  clientWhiteList:
+    - serviceid: microservice-store-zuul
+      secret: store
+    - serviceid: microservice-store-auth
+      secret: store
+#    - serviceid: wm-auth
+#      secret: wm-admin
+#    - serviceid: wm-eureka
+#      secret: wm-admin
+#    - serviceid: wm-monitor
+#      secret: wm-admin
+#    - serviceid: wm-hello-world
+#      secret: wm-admin

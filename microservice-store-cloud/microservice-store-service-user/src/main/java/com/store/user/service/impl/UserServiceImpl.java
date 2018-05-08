@@ -28,7 +28,7 @@ public class UserServiceImpl implements IUserService {
 	@Autowired
 	private ITbMenuMapper tbMenuMapper;
 
-	//@Override
+	@Override
 	public List<MenuDTO> getMenuList() {
 		List<Menu> menus = tbMenuMapper.getMenuList();
 		List<MenuDTO> menuDTOList = Menu2MenuDTOConverter.convert(menus);
@@ -44,11 +44,12 @@ public class UserServiceImpl implements IUserService {
         return a;
     }
 
-    //@Override
+    @Override
     public User findByNameMybatis(@RequestBody User user) {
 		String name=user.getName();
 		String password=user.getPassword();
 	    System.out.println(name+":::"+password);
+		User u = studentMapper.findByMybatis(name,password);
         return studentMapper.findByMybatis(name,password);
     }
 

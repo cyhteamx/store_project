@@ -11,23 +11,31 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 zuul:
+#  sensitiveHeaders:
+#  sensitiveHeaders: "*"  #敏感headers也支持全局设置(必须这样设置)
+  add-proxy-headers: true  #X-Forwarder-Host请求头默认添加到转发请求中
+#  ignoreSecurityHeaders: false
   routes:
     auth:
       path: /auth/**
-#      sensitiveHeaders:
 #      sensitive-headers:
       stripPrefix: true
       serviceId: microservice-store-auth
+      sensitiveHeaders:
     admin:
       path: /admin/**
       serviceId: microservice-store-web-admin
+      sensitiveHeaders:
     user:
       path: /user/**
       stripPrefix: false
       serviceId: microservice-store-service-user
+      sensitiveHeaders:
+
 #  add-proxy-headers: true
-  add-host-header: true
-  sensitive-headers:
+#  add-host-header: true
+#  sensitive-headers:
+#  custom-sensitive-headers: true
 #zuul.sensitiveHeaders: Cookie,Set-Cookie,Authorization # zuul.sensitive-headers=
 
 client:
@@ -35,12 +43,12 @@ client:
 
 while-list:
   uriWhiteList:
-    - /admin/login
-    - /admin/menu/list
-    - /user/menu/list
-    - /auth/oauth/token
-    - /auth/oauth/authorize
-    - /auth/oauth/user
+#    - /admin/login
+#    - /admin/menu/list
+#    - /user/menu/list
+#    - /auth/oauth/token
+#    - /auth/oauth/authorize
+#    - /auth/oauth/user
 #    - /auth/client/token
     - /auth/jwt/token
 
@@ -70,5 +78,5 @@ while-list:
 #  eureka:
 #    enabled: false #配置zuul路由时用将此属性设置为false
 
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 70000
+#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 70000
 

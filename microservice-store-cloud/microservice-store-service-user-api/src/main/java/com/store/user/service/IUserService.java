@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
 
-@FeignClient(value="microservice-store-zuul", fallback = UserServiceHystrix.class)
+@FeignClient(value="microservice-store-service-user", fallback = UserServiceHystrix.class)
 public interface IUserService {
 
     @GetMapping("/user/all")

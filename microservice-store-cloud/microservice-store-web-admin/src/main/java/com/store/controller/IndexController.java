@@ -22,7 +22,7 @@ public class IndexController {
     //订单列表
     @GetMapping("/menu/list")
     public ResultVO<List<MenuDTO>> list() {
-        List<MenuDTO> list = userService.getMenuList();
+//        List<MenuDTO> list = userService.getMenuList();
         return ResultVOUtil.success(userService.getMenuList());
     }
 

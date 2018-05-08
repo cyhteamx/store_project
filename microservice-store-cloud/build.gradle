@@ -127,6 +127,7 @@ project("microservice-store-service-user") {
         compile(project(":microservice-store-common"))
         compile(project(":microservice-store-common-mapper"))
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+        compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
     }
 }
 

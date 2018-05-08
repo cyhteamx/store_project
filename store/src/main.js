@@ -15,6 +15,24 @@ Vue.prototype.$axios = axios;
 
 Vue.use(VueResource);
 
+axios.defaults.baseURL = 'http://localhost:8888';
+axios.interceptors.request.use(
+  config => {
+    const token = localStorage.getItem('access-token');
+    console.log(token);
+    config.headers.common['Content-Type'] = 'application/json;charset=UTF-8';
+    if (token) {
+      // Bearer是JWT的认证头部信息
+      // config.headers.common['Authorization'] = 'Bearer ' + token;
+      config.headers.common['access-token'] = token;
+    }
+    return config;
+  },
+  error => {
+    return Promise.reject(error);
+  }
+);
+
 // 使用钩子函数对路由进行权限跳转
 router.beforeEach((to, from, next) => {
   if(to.meta.permission){

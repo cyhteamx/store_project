@@ -25,10 +25,11 @@
 
 <script>
   import bus from '../common/bus';
+  import axios from 'axios'
 
   var config = require('config')
   config = process.env.NODE_ENV === 'development' ? config.dev : config.build
-  const ERR_OK = 0;
+  const ERR_OK = 200;
 
   export default {
     data() {
@@ -63,6 +64,13 @@
         this.items = response.data;
       }
     });
+
+      axios.get('/admin/menu/list').then(response => {
+        response = response.data;
+        if (response.code === ERR_OK) {
+          this.items = response.data;
+        }
+      });
   },
     computed: {
       onRoutes() {

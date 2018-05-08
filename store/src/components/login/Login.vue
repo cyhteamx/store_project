@@ -19,10 +19,11 @@
 
 <script>
   import bus from '../common/bus';
+  import axios from 'axios'
 
   var config = require('config')
   config = process.env.NODE_ENV === 'development' ? config.dev : config.build
-  const ERR_OK = 0;
+  const ERR_OK = 200;
 
   export default {
         data: function() {
@@ -44,27 +45,62 @@
         methods: {
             submitForm(formName) {
               const self = this;
-              // self.$refs[formName].validate((valid) => {
-                this.$http.get('/admin/login', {
-                  params: {
-                    name: self.ruleForm.username,
-                    pass: self.ruleForm.password
-                  }
-              }).then((response) => {
-                  response = response.body;
-                  if (response.code === ERR_OK) {
-                    if (response.data === null) {
-                      alert('user/pass-error.');
-                    } else {
-                      localStorage.setItem('ms_username', self.ruleForm.username);
-                      self.$router.push('/store');
-                    }
+
+              axios.post('/auth/jwt/token', {
+                loginname: 'admin',
+                password: 'admin'
+              }).then(response => {
+                response = response.data;
+                if (response.code === ERR_OK) {
+                  if (response.data === null) {
+                    alert('error.');
                   } else {
-                    alert('error submit!!');
-                    return false;
+                    localStorage.setItem('access-token', response.data);
+                    axios.get('/admin/login', {
+                        params: {
+                          name: self.ruleForm.username,
+                          pass: self.ruleForm.password
+                        }
+                      }).then(response => {
+                      response = response.data;
+                      if (response.code === ERR_OK) {
+                        if (response.data === null) {
+                          alert('error.');
+                        } else {
+                          self.$router.push('/store');
+                        }
+                      } else {
+                        alert('error submit!!');
+                        return false;
+                      }
+                    });
                   }
-                })
-             // };
+                } else {
+                  alert('error submit!!');
+                  return false;
+                }
+                // if (res.data.success) {
+                //   //保存soket.io
+                //   localStorage.setItem('access-token', res.data);
+                //   //弹窗
+                //   this.messageBox.messageBoxEvent = 'login'
+                //   this.messageBox.visible = true;
+                //   this.messageBox.message = "您已登录成功"
+                // } else {
+                //   this.$message({
+                //     message: res.data.message,
+                //     type: "error"
+                //   });
+                // }
+              }).catch(err => {
+                console.log(err)
+                this.$message({
+                  message: '服务器出错啦',
+                  type: "error"
+                });
+              });
+
+
             }
         }
     }

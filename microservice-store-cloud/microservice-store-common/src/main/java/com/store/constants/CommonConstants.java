@@ -49,7 +49,7 @@ public class CommonConstants {
     public static final String JWT_PRI_KEY_PATH_WIN = "classpath:jwt/pri.key";
     public static final String JWT_PUB_KEY_PATH_LINUX = "/root/token/jwt/pub.key";
     public static final String JWT_PRI_KEY_PATH_LINUX = "/root/token/jwt/pri.key";
-    public static final String JWT_ACCESS_TOKEN = "access-token";
+    public static final String JWT_ACCESS_TOKEN = "access-token"; //access-token
     //60 min
     public static final Integer JWT_ACCESS_EXPIRE = 60;
 

@@ -22,9 +22,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
+import sun.security.util.SecurityConstants;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
+import java.util.Enumeration;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -81,6 +83,23 @@ public class PreRequestFilter extends ZuulFilter {
         String requestURI = request.getRequestURI();
         String token = null ;
 
+        String s = request.getHeader("name");
+        log.info("================, s=:{}", s);
+
+        token = request.getHeader(CommonConstants.JWT_ACCESS_TOKEN);
+
+//        Enumeration<String> el = request.getHeaderNames();
+//        while(el.hasMoreElements()){
+//            String headerName = el.nextElement();//透明称
+//            Enumeration<String> headerValues = request.getHeaders(headerName);
+//            while(headerValues.hasMoreElements()){
+//                System.out.println(headerName+":"+headerValues.nextElement());
+//            }
+//        }
+
+        RequestContext requestContext = RequestContext.getCurrentContext();
+        requestContext.addZuulRequestHeader(CommonConstants.JWT_ACCESS_TOKEN, token);
+
 	    try {
             // 请求路径白名单
             if (accessService.ignoreUri(requestURI)) {
@@ -90,21 +109,19 @@ public class PreRequestFilter extends ZuulFilter {
             log.info("准备向鉴权服务发送请求获取客户端的client-token.");
             ResultVO<String> response = authService.authorize(appName, secret);
             if (response.getCode() == 200) {
-                ResultVO<String> clientToken = response;
-                log.info("向鉴权服务发送请求获取客户端的client-token.成功，获取的client-token为：{}", clientToken.getData());
-                ctx.addZuulRequestHeader(CommonConstants.CLIENT_ACCESS_TOKEN, clientToken.getData());
+//                ResultVO<String> clientToken = response;
+                log.info("向鉴权服务发送请求获取客户端的client-token.成功，获取的client-token为：{}", response.getData());
+                ctx.addZuulRequestHeader(CommonConstants.CLIENT_ACCESS_TOKEN, response.getData());
             } else {
                 throw new ClientInvalidException();
             }
+
             token = request.getHeader(CommonConstants.JWT_ACCESS_TOKEN);
 
             // 检验登录token
             log.info("准备检验登录access-token:{}", token);
             IJWTInfo ijwtInfo = JWTTokenUtil.Singleton().getInfoFromToken(token);
             log.info("检验登录access-token成功，当前登录人员为：{}", ijwtInfo.getName());
-
-
-
         } catch (InvalidKeySpecException | NoSuchAlgorithmException | JwtException | ValidateException e) {
             log.error("检验登录token:{},校验失败！", token);
             log.error("异常信息为：{}", e.getMessage());

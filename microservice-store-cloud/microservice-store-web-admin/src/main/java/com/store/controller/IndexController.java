@@ -7,9 +7,8 @@ import com.store.utils.ResultVOUtil;
 import com.store.vo.ResultVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.GetMapping;
-
+import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
@@ -22,7 +21,6 @@ public class IndexController {
     //订单列表
     @GetMapping("/menu/list")
     public ResultVO<List<MenuDTO>> list() {
-//        List<MenuDTO> list = userService.getMenuList();
         return ResultVOUtil.success(userService.getMenuList());
     }
 

@@ -67,7 +67,7 @@
                         if (response.data === null) {
                           alert('error.');
                         } else {
-                          self.$router.push('/store');
+                          self.$router.push('/');
                         }
                       } else {
                         alert('error submit!!');

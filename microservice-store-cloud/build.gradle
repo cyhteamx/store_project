@@ -101,7 +101,7 @@ project("microservice-store-web-admin") {
     description = "microservice-store-web-admin"
 
     dependencies {
-//        compile(project(":microservice-store-common"))
+        compile(project(":microservice-store-common"))
         compile(project(":microservice-store-service-user-api"))
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
         compile("org.springframework.cloud:spring-cloud-starter-netflix-hystrix")
@@ -176,6 +176,19 @@ project("microservice-store-common-mapper") {
     }
 }
 
+project("microservice-store-common-mapper") {
+    description = "microservice-store-common-mapper"
+
+    dependencies {
+        compile(project(":microservice-store-common"))
+        compile("mysql:mysql-connector-java")
+        compile("org.mybatis.spring.boot:mybatis-spring-boot-starter")
+        compile("com.github.pagehelper:pagehelper-spring-boot-starter:${springBootpagehelperVersion}")
+        compile("com.alibaba:druid-spring-boot-starter:${springBootDruidVersion}")
+
+    }
+}
+
 project("microservice-store-common") {
     description = "microservice-store-common"
 
@@ -187,10 +200,6 @@ project("microservice-store-common") {
         compile("cn.hutool:hutool-all:${hutoolAllVersion}")
         compile("io.jsonwebtoken:jjwt:${jjwtVersion}")
         compile("com.alibaba:fastjson:${fastjsonVersion}")
-
-
-
-//        compile 'com.alibaba:fastjson:1.2.33'
     }
 }
 

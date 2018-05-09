@@ -1,6 +1,5 @@
 package com.store.user.service.impl;
 
-
 import com.store.converter.Menu2MenuDTOConverter;
 import com.store.dto.MenuDTO;
 import com.store.mapper.ITbMenuMapper;
@@ -8,11 +7,8 @@ import com.store.mapper.ITbUserMapper;
 import com.store.model.Menu;
 import com.store.model.User;
 import com.store.user.service.IUserService;
-import com.sun.org.glassfish.gmbal.ParameterNames;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;

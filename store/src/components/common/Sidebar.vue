@@ -58,20 +58,13 @@
     // this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
     // let selectedGoods = window.selectedGoods;
     // selectedGoods = selectedGoods ? JSON.parse(selectedGoods) : [];
-    this.$http.get('/admin/menu/list').then((response) => {
-      response = response.body;
-      if (response.code === ERR_OK) {
-        this.items = response.data;
-      }
-    });
-
       axios.get('/admin/menu/list').then(response => {
         response = response.data;
         if (response.code === ERR_OK) {
           this.items = response.data;
         }
       });
-  },
+    },
     computed: {
       onRoutes() {
         return this.$route.path.replace('/', '');

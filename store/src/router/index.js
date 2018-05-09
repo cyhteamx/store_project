@@ -7,19 +7,25 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/login'
+      redirect: '/order'
     },
     {
-      path: '/store',
+      // path: '/store',
+      // component: resolve => require(['../components/common/Home.vue'], resolve),
+      // meta: {title: '首页'},
+      path: '/',
       component: resolve => require(['../components/common/Home.vue'], resolve),
+      meta: { title: '自述文件' },
       children: [
         {
-          path: '/',
-          component: resolve => require(['../components/order/Order.vue'], resolve)
+          path: '/order',
+          component: resolve => require(['../components/order/Order.vue'], resolve),
+          meta: {title: '订单'}
         },
         {
           path: '/product_list',
-          component: resolve => require(['../components/product/Product.vue'], resolve)
+          component: resolve => require(['../components/product/Product.vue'], resolve),
+          meta: {title: '商品'}
         }
       ]
     }, {

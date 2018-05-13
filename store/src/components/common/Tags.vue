@@ -88,11 +88,19 @@
 
 <style>
   .tags {
-    position: relative;
+    /*tags进行滚动*/
+    /*position: relative;*/
+    /*tags进行滚动*/
+    /*tags不进行滚动*/
+    position: absolute;
+    left: 250px;
+    /*tags不进行滚动*/
+
     height: 30px;
     overflow: hidden;
     background: #fff;
     padding-right: 120px;
+    z-index: 2;
   }
 
   .tags ul {

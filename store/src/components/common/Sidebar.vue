@@ -24,8 +24,8 @@
 </template>
 
 <script>
-  import bus from '../common/bus';
-  import axios from 'axios'
+  import bus from './bus';
+  import axios from 'axios';
 
   var config = require('config')
   config = process.env.NODE_ENV === 'development' ? config.dev : config.build

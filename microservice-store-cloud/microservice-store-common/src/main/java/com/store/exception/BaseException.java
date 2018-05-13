@@ -1,28 +1,24 @@
 package com.store.exception;
 
+import lombok.Data;
+import lombok.Getter;
+
 /**
- * BaseException.class
+ * BaseException
  * Description:
- *  自定义基础异常类
+ * 自定义基础异常类
  */
+@Getter
 public class BaseException extends RuntimeException {
-    private int status = 200;
 
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
+    private int code = 200;
 
     public BaseException() {
     }
 
-
-    public BaseException(String message, int status) {
+    public BaseException(String message, int code) {
         super(message);
-        this.status = status;
+        this.code = code;
     }
 
     public BaseException(String message) {

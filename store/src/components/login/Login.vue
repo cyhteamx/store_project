@@ -18,7 +18,6 @@
 </template>
 
 <script>
-  import bus from '../common/bus';
   import axios from 'axios'
 
   var config = require('config')

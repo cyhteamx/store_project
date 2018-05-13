@@ -83,11 +83,6 @@ public class PreRequestFilter extends ZuulFilter {
         String requestURI = request.getRequestURI();
         String token = null ;
 
-        String s = request.getHeader("name");
-        log.info("================, s=:{}", s);
-
-        token = request.getHeader(CommonConstants.JWT_ACCESS_TOKEN);
-
 //        Enumeration<String> el = request.getHeaderNames();
 //        while(el.hasMoreElements()){
 //            String headerName = el.nextElement();//透明称
@@ -128,7 +123,7 @@ public class PreRequestFilter extends ZuulFilter {
             ctx.setResponseBody(JSON.toJSONString(new TokenErrorException()));
         } catch (ClientInvalidException ex) {
             log.error("向鉴权服务发送请求获取客户端的client-token失败，appName:{}", appName);
-            ctx.setResponseBody(JSON.toJSONString(new BaseResponse(ex.getStatus(), ex.getMessage())));
+            ctx.setResponseBody(JSON.toJSONString(new BaseResponse(ex.getCode(), ex.getMessage())));
         } catch (Exception e) {
             log.error("异常信息为：{}", e.getMessage());
             ctx.setResponseBody(JSON.toJSONString(new TokenErrorException()));

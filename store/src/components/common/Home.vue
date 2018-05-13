@@ -2,8 +2,10 @@
   <div class="wrapper">
     <v-head></v-head>
     <v-sidebar></v-sidebar>
+    <!-- tags不进行滚动 -->
+    <v-tags></v-tags>
     <div class="content-box" :class="{'content-collapse':collapse}">
-      <v-tags></v-tags>
+      <!--<v-tags></v-tags> tags进行滚动-->
       <div class="content">
         <transition name="move" mode="out-in">
           <keep-alive>

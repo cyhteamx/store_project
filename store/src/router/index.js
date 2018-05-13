@@ -21,11 +21,14 @@ export default new Router({
           path: '/order',
           component: resolve => require(['../components/order/Order.vue'], resolve),
           meta: {title: '订单'}
-        },
-        {
+        }, {
           path: '/product_list',
           component: resolve => require(['../components/product/Product.vue'], resolve),
           meta: {title: '商品'}
+        }, {
+          path: '/category_list',
+          component: resolve => require(['../components/product/ProductCategory.vue'], resolve),
+          meta: {title: '商品类目'}
         }
       ]
     }, {

@@ -2,11 +2,12 @@ package com.store.mapper;
 
 import com.store.model.ProductCategory;
 import org.apache.ibatis.annotations.*;
+import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 import java.util.Map;
 
-public interface IProductCategoryMapper {
+public interface IProductCategoryMapper extends Mapper<ProductCategory>  {
 
     @Insert("insert into product_category(category_name, category_type) values (#{categoryName, jdbcType=VARCHAR}, #{category_type, jdbcType=INTEGER})")
     int insertByMap(Map<String, Object> map);

@@ -39,7 +39,9 @@ configure(allprojects) { project ->
     ext.hutoolAllVersion            = '4.0.10'
     ext.jjwtVersion                 = '0.9.0'
     ext.fastjsonVersion             = '1.2.47'
-    
+    ext.mapperVersion               = '4.0.2'
+    ext.persistenceApiVersion       = '1.0.2'
+    ext.commonsLang3Version         = '3.7'
 
     apply plugin: "java"
     apply plugin: 'idea'
@@ -103,6 +105,7 @@ project("microservice-store-web-admin") {
     dependencies {
         compile(project(":microservice-store-common"))
         compile(project(":microservice-store-service-user-api"))
+        compile(project(":microservice-store-service-product-api"))
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
         compile("org.springframework.cloud:spring-cloud-starter-netflix-hystrix")
 //        compile("org.springframework.boot:spring-boot-starter-security")
@@ -172,20 +175,12 @@ project("microservice-store-common-mapper") {
         compile("org.mybatis.spring.boot:mybatis-spring-boot-starter")
         compile("com.github.pagehelper:pagehelper-spring-boot-starter:${springBootpagehelperVersion}")
         compile("com.alibaba:druid-spring-boot-starter:${springBootDruidVersion}")
+        compile("tk.mybatis:mapper:${mapperVersion}")
+        compile("org.apache.commons:commons-lang3:${commonsLang3Version}")
 
-    }
-}
+//        compile("tk.mybatis:mapper-spring-boot-starter")
 
-project("microservice-store-common-mapper") {
-    description = "microservice-store-common-mapper"
-
-    dependencies {
-        compile(project(":microservice-store-common"))
-        compile("mysql:mysql-connector-java")
-        compile("org.mybatis.spring.boot:mybatis-spring-boot-starter")
-        compile("com.github.pagehelper:pagehelper-spring-boot-starter:${springBootpagehelperVersion}")
-        compile("com.alibaba:druid-spring-boot-starter:${springBootDruidVersion}")
-
+//        compile group: 'javax.persistence', name: 'persistence-api', version: '1.0.2'
     }
 }
 
@@ -194,12 +189,13 @@ project("microservice-store-common") {
 
     dependencies {
         compile("org.springframework.boot:spring-boot-starter-web")
+        compile("org.springframework.boot:spring-boot-starter-data-redis")
         compile("org.projectlombok:lombok:${lombokVersion}")
         compile("com.google.code.gson:gson:${gsonVersion}")
-        compile("org.springframework.boot:spring-boot-starter-data-redis")
         compile("cn.hutool:hutool-all:${hutoolAllVersion}")
         compile("io.jsonwebtoken:jjwt:${jjwtVersion}")
         compile("com.alibaba:fastjson:${fastjsonVersion}")
+        compile("javax.persistence:persistence-api:${persistenceApiVersion}")
     }
 }
 
@@ -219,12 +215,33 @@ project("microservice-store-auth") {
 
 //        compile("org.springframework.boot:spring-boot-autoconfigure")
 //        compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.0.1.RELEASE'
-        compile("org.springframework.boot:spring-boot-starter-data-jpa")
+//        compile("org.springframework.boot:spring-boot-starter-data-jpa")
         compile("mysql:mysql-connector-java")
 
     }
 }
 
+project("microservice-store-service-product-api") {
+    description = "microservice-store-service-product-api"
+
+    dependencies {
+        compile(project(":microservice-store-common"))
+        compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+        //compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+    }
+}
+
+project("microservice-store-service-product") {
+    description = "microservice-store-service-product"
+
+    dependencies {
+        compile(project(":microservice-store-service-product-api"))
+        compile(project(":microservice-store-common"))
+        compile(project(":microservice-store-common-mapper"))
+        compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
+        compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+    }
+}
 
 configure(rootProject) {
     description = "microservice-store-cloud"

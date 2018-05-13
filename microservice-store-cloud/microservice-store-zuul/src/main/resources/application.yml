@@ -31,7 +31,11 @@ zuul:
       stripPrefix: false
       serviceId: microservice-store-service-user
       sensitiveHeaders:
-
+    product:
+      path: /product/**
+      stripPrefix: false
+      serviceId: microservice-store-service-product
+      sensitiveHeaders:
 #  add-proxy-headers: true
 #  add-host-header: true
 #  sensitive-headers:
@@ -78,5 +82,5 @@ while-list:
 #  eureka:
 #    enabled: false #配置zuul路由时用将此属性设置为false
 
-#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 70000
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 70000
 

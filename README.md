@@ -107,21 +107,21 @@ store_project
 
 	microservice-store-cloud
 
-	--microservice-store-eureka 					服务注册中心
+	--microservice-store-eureka 					           服务注册中心
 
-	--microservice-store-config 					配置,暂未实现
+	--microservice-store-config 					           配置,暂未实现
 
-	--microservice-store-zuul						网关,请求先通过网关，网关先做相应的权限认证，认证通过后转发
+	--microservice-store-zuul						             网关,请求先通过网关，网关先做相应的权限认证，认证通过后转发
 
-	--microservice-store-auth						认证中心微服务
+	--microservice-store-auth						             认证中心微服务
 
-	--microservice-store-common                     通用资源
+	--microservice-store-common                    通用资源
 
-	--microservice-store-common-mapper				mybatis的mapper部分
+	--microservice-store-common-mapper				        mybatis的mapper部分
 
-	--microservice-store-web-admin					后台管理系统微服务
+	--microservice-store-web-admin					           后台管理系统微服务
 
-	--microservice-store-service-user-api			用户服务API
+	--microservice-store-service-user-api			       用户服务API
 
 	--microservice-store-service-user               用户微服务
 
@@ -147,10 +147,32 @@ store_project
 
 		微服务网关microservice-store-zuul,主要用于转发及权限认证,高可用可以使用ngnix。
 
+    3.5.1 微服务之间的调用
+    
+        最初微服务之间的调用都是通过网关,新增授权后,通过网关转发时,由于网关只能自上而下转发携带相应的header,由下游微服务通过网关转发时，相应的header并不能转发,故header中的access_token丢失。并且通过网关转发，由于一直在获取access_token导致死循环问题。
+        
+        修改为微服务之间的调用直接调用,不在通过网关转发。
+        
+    3.5.2 网关stripPrefix属性配置
+    
+        zuul:
+            routes:
+                users:
+                    path: /user/**
+                    stripPrefix: false
+    
+    假设请求路劲:/user/list
+    stripPrefix: false时转发到user微服务的/user/list接口
+    stripPrefix: true时转发到user微服务的/list接口
 
-		
+    3.6 认证中心
+    
+    3.6.1 jwt认证
+        
+    3.6.2 client认证
 
-	
+        
+
 
 
 

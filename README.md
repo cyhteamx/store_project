@@ -147,6 +147,9 @@ store_project
 
 		微服务网关microservice-store-zuul,主要用于转发及权限认证,高可用可以使用ngnix。
 
+
+		
+
 	
 
 

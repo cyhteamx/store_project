@@ -1,6 +1,7 @@
 package com.store.user.controller;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.store.constants.CommonConstants;
 import com.store.dto.MenuDTO;
 import com.store.model.SysMenu;
 import com.store.model.SysRole;
@@ -69,6 +70,18 @@ public class MenuController extends BaseController {
         List<SysRole> sysRoles = sysRoleService.selectList(sysRoleWarpper);
         return sysMenuService.findUserMenuTree(sysRoles.stream().map(e -> e.getRoleType().toString()).collect(Collectors.toList()));
 //        return sysMenuService.findUserMenuTree(getRole());
+    }
+
+    /**
+     * 返回树形菜单集合
+     *
+     * @return 树形菜单
+     */
+    @GetMapping(value = "/allTree")
+    public List<MenuTree> getAllTree() {
+        SysMenu condition = new SysMenu();
+        condition.setDelFlag(CommonConstants.STATUS_NORMAL);
+        return getMenuTree(sysMenuService.selectList(new EntityWrapper<>(condition)), 0);
     }
 
     /**

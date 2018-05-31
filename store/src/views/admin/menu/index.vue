@@ -1,10 +1,13 @@
-<template>
+mapGetters<template>
   <div class="app-container calendar-list-container">
     <div class="filter-container">
       <el-button-group>
-        <el-button type="primary" v-if="menuManager_btn_add" icon="plus" @click="handlerAdd">添加</el-button>
-        <el-button type="primary" v-if="menuManager_btn_edit" icon="edit" @click="handlerEdit">编辑</el-button>
-        <el-button type="primary" v-if="menuManager_btn_del" icon="delete" @click="handleDelete">删除</el-button>
+        <el-button type="primary" icon="plus" @click="handlerAdd">添加</el-button>
+        <el-button type="primary" icon="edit" @click="handlerEdit">编辑</el-button>
+        <el-button type="primary" icon="delete" @click="handleDelete">删除</el-button>
+        <!--<el-button type="primary" v-if="menuManager_btn_add" icon="plus" @click="handlerAdd">添加</el-button>-->
+        <!--<el-button type="primary" v-if="menuManager_btn_edit" icon="edit" @click="handlerEdit">编辑</el-button>-->
+        <!--<el-button type="primary" v-if="menuManager_btn_del" icon="delete" @click="handleDelete">删除</el-button>-->
       </el-button-group>
     </div>
 
@@ -80,8 +83,8 @@
 </template>
 
 <script>
-  // import { fetchTree, getObj, addObj, delObj, putObj } from '@/api/menu'
-  // import { mapGetters } from 'vuex'
+  import { fetchTree, getObj, addObj, delObj, putObj } from '@/api/menu'
+  import { mapGetters } from 'vuex'
   export default {
     name: 'menu',
     data() {
@@ -125,9 +128,9 @@
           path: undefined
         },
         currentId: -1,
-        menuManager_btn_add: false,
-        menuManager_btn_edit: false,
-        menuManager_btn_del: false
+        // menuManager_btn_add: false,
+        // menuManager_btn_edit: false,
+        // menuManager_btn_del: false
       }
     },
     filters: {
@@ -209,7 +212,7 @@
         this.showElement = true
       },
       handlerEdit() {
-        if (this.form.menuId) {
+        if (this.form.id) {
           this.formEdit = false
           this.formStatus = 'update'
         }

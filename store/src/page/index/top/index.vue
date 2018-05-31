@@ -39,12 +39,12 @@
           <el-dropdown-item>
             <router-link to="/info/index">修改信息</router-link>
           </el-dropdown-item>
-          <el-dropdown-item>
-            <a href="https://gitee.com/log4j/pig" target="_blank">pig地址</a>
-          </el-dropdown-item>
-          <el-dropdown-item>
-            <a href="https://gitee.com/smallweigit/avue" target="_blank">avue地址</a>
-          </el-dropdown-item>
+          <!--<el-dropdown-item>-->
+            <!--<a href="https://gitee.com/log4j/pig" target="_blank">pig地址</a>-->
+          <!--</el-dropdown-item>-->
+          <!--<el-dropdown-item>-->
+            <!--<a href="https://gitee.com/smallweigit/avue" target="_blank">avue地址</a>-->
+          <!--</el-dropdown-item>-->
           <el-dropdown-item @click.native="logout" divided>退出系统</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>

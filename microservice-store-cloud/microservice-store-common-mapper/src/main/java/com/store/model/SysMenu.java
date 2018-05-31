@@ -51,7 +51,7 @@ public class SysMenu extends Model<SysMenu> {
 	/**
 	 * 是否下级节点ISLEAF, 是否叶子节点:0父节点,1叶节点
 	 */
-	private boolean isLeaf;
+//	private boolean isLeaf;
 
 	/**
 	 * 层级:一级菜单,二级菜单,三级菜单

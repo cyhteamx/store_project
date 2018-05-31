@@ -14,9 +14,10 @@ public class SysMenu2MenuDTOConverter {
 
         List<SysMenu> oneLevels = new ArrayList<SysMenu>();
         for (SysMenu menu: menus) {
-            if (!menu.isLeaf()) {
-                oneLevels.add(menu);
-            }
+            //TODO  isLeaf
+//            if (!menu.isLeaf()) {
+//                oneLevels.add(menu);
+//            }
         }
 
         for (SysMenu menu: oneLevels) {

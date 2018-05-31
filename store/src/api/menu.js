@@ -16,7 +16,7 @@ export function GetMenu() {
 
 export function fetchTree(query) {
   return request({
-    url: '/admin/menu/allTree',
+    url: '/user/menu/allTree',
     method: 'get',
     params: query
   })
@@ -24,21 +24,21 @@ export function fetchTree(query) {
 
 export function fetchAll() {
   return request({
-    url: '/admin/menu/navMenu',
+    url: '/user/menu/navMenu',
     method: 'get'
   })
 }
 
 export function fetchUserTree() {
   return request({
-    url: '/admin/menu/userTree',
+    url: '/user/menu/userTree',
     method: 'get'
   })
 }
 
 export function addObj(obj) {
   return request({
-    url: '/admin/menu/',
+    url: '/user/menu/',
     method: 'post',
     data: obj
   })
@@ -46,21 +46,21 @@ export function addObj(obj) {
 
 export function getObj(id) {
   return request({
-    url: '/admin/menu/' + id,
+    url: '/user/menu/' + id,
     method: 'get'
   })
 }
 
 export function delObj(id) {
   return request({
-    url: '/admin/menu/' + id,
+    url: '/user/menu/' + id,
     method: 'delete'
   })
 }
 
 export function putObj(obj) {
   return request({
-    url: '/admin/menu/',
+    url: '/user/menu/',
     method: 'put',
     data: obj
   })

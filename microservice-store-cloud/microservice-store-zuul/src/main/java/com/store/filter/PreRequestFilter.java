@@ -92,8 +92,8 @@ public class PreRequestFilter extends ZuulFilter {
 //            }
 //        }
 
-        RequestContext requestContext = RequestContext.getCurrentContext();
-        requestContext.addZuulRequestHeader(CommonConstants.JWT_ACCESS_TOKEN, token);
+//        RequestContext requestContext = RequestContext.getCurrentContext();
+//        requestContext.addZuulRequestHeader(CommonConstants.JWT_ACCESS_TOKEN, token);
 
 	    try {
             // 请求路径白名单

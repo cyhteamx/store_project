@@ -70,4 +70,66 @@ public class CommonConstants {
      */
     public final static String RESOURCE_TYPE_MENU = "menu";
     public final static String RESOURCE_TYPE_BTN = "button";
+
+    /**
+     * token请求头名称
+     */
+    public final static String REQ_HEADER = "Authorization";
+
+
+    /**
+     * token分割符
+     */
+    public final static String TOKEN_SPLIT = "Bearer ";
+
+    /**
+     * jwt签名
+     */
+    public final static  String SIGN_KEY = "PIG";
+
+    /**
+     * 删除
+     */
+    public final static Integer STATUS_DEL = 1;
+
+    /**
+     * 正常
+     */
+    public final static Integer STATUS_NORMAL = 0;
+
+    /**
+     * 锁定
+     */
+    public final static String STATUS_LOCK = "9";
+
+    /**
+     * 菜单
+     */
+    public final static String MENU = "0";
+
+    /**
+     * 按钮
+     */
+    public final static String BUTTON = "1";
+
+    /**
+     * 删除标记
+     */
+    public final static  String DEL_FLAG = "del_flag";
+
+    /**
+     * 编码
+     */
+    public final static String UTF8 = "UTF-8";
+
+    /**
+     * JSON 资源
+     */
+    public final static String CONTENT_TYPE = "application/json; charset=utf-8";
+
+    /**
+     * 阿里大鱼
+     */
+    public final static String ALIYUN_SMS = "aliyun_sms";
+
 }

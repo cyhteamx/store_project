@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Data
 public class JwtAuthenticationVo implements Serializable {
 
-    private String loginname;
+    private String username;
 
     private String password;
 

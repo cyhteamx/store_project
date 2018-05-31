@@ -98,7 +98,10 @@ store_project
 
 	生产环境使用ngnix解决跨域问题。
 
-
+2.7 前端build修改
+    /store_project/store/build/dev-server.js   新增
+    /store_project/store/build/webpack.base.conf.js 打包时包含哪些目录
+    
 3.后台部分
 	
 	后台使用spring boot 2.0.1.RELEASE,spring cloud Finchley.RC1实现，数据库使用关系型mysql,非关系数据库选用redis,项目管理使用gradle。详情见以下模块说明。

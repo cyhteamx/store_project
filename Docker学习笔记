@@ -1,0 +1,64 @@
+1.进入Docker容器方法
+docker inspect --format "{{.State.Pid}}" mydocker4
+nsenter --target 22347 --mount --uts --ipc --net --pid
+
+2.数据卷
+a.docker run -it --name volume-test1 -h nginx -v /data centos
+b.看Volumes目录
+docker inspect -f {{.Config.Volumes}} ***
+c.挂载目录到容器
+~/log==>/log
+docker run -it --name volume-test2 -h nginx -v ~/log:/log centos
+
+3.数据卷容器
+新建volume-test4，卷来自volume-test1
+docker run -it --name volume-test4 --volumes-from volume-test1 centos
+
+4.镜像构建
+docker run --name nginx-man -it centos
+
+yum install -y wget gcc gcc-c++ make openssl-devel
+
+5.容器间通信
+link仅解决同一台主机容器间通信
+
+6.centos 7 Linux路由机制打通网络
+/usr/lib/systemd/system/docker.service配置文件内容:
+[Unit]
+Description=Docker Application Container Engine
+Documentation=http://docs.docker.com
+After=network.target rhel-push-plugin.socket registries.service
+Wants=docker-storage-setup.service
+Requires=docker-cleanup.timer
+
+[Service]
+Type=notify
+NotifyAccess=all
+EnvironmentFile=-/run/containers/registries.conf
+EnvironmentFile=-/etc/sysconfig/docker
+EnvironmentFile=-/etc/sysconfig/docker-storage
+EnvironmentFile=-/etc/sysconfig/docker-network
+Environment=GOTRACEBACK=crash
+Environment=DOCKER_HTTP_HOST_COMPAT=1
+Environment=PATH=/usr/libexec/docker:/usr/bin:/usr/sbin
+ExecStart=
+ExecStart=/usr/bin/dockerd --bip=172.18.42.1/16 -H=unix:///var/run/docker.sock \  #注意这行配置
+          --add-runtime docker-runc=/usr/libexec/docker/docker-runc-current \
+          --default-runtime=docker-runc \
+          --exec-opt native.cgroupdriver=systemd \
+          --userland-proxy-path=/usr/libexec/docker/docker-proxy-current \
+          $OPTIONS \
+          $DOCKER_STORAGE_OPTIONS \
+          $DOCKER_NETWORK_OPTIONS \
+          $ADD_REGISTRY \
+          $BLOCK_REGISTRY \
+          $INSECURE_REGISTRY\
+          $REGISTRIES
+ExecReload=/bin/kill -s HUP $MAINPID
+LimitNOFILE=1048576
+LimitNPROC=1048576
+LimitCORE=infinity
+TimeoutStartSec=0
+Restart=on-abnormal
+
+

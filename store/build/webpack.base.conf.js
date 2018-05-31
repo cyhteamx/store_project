@@ -3,10 +3,8 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
-// const projectRoot = path.resolve(__dirname, '../')
 
-
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -24,7 +22,7 @@ const createLintingRule = () => ({
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js'
+    app: './src/entry-client.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -33,20 +31,25 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+  externals: {
+    'vue': 'Vue',
+    'vue-router': 'VueRouter',
+    'vuex': 'Vuex',
+    'axios': 'axios',
+    'element-ui': 'ELEMENT',
+  },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
-      'src': path.resolve(__dirname, '../src'),
-      'common': path.resolve(__dirname, '../src/common'),
-      'config': path.resolve(__dirname, '../config'),
-      'components': path.resolve(__dirname, '../src/components')
     }
   },
   module: {
     rules: [
+      
       ...(config.dev.useEslint ? [createLintingRule()] : []),
+      
       {
         test: /\.vue$/,
         loader: 'vue-loader',

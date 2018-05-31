@@ -28,7 +28,7 @@ zuul:
       sensitiveHeaders:
     user:
       path: /user/**
-      stripPrefix: false
+      stripPrefix: true
       serviceId: microservice-store-service-user
       sensitiveHeaders:
     product:

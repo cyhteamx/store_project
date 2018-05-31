@@ -7,3 +7,4 @@
 /microservice-store-cloud/*/out
 .DS_Store  
 /store/node_modules
+/microservice-store-cloud/pig

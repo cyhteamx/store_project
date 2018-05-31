@@ -3,6 +3,7 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
+var baseUrl = 'http://127.0.0.1:8888';
 
 module.exports = {
   dev: {
@@ -11,14 +12,30 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     // proxyTable: {},
+    // proxyTable: {
+    //   '/admin': {
+    //     target: 'http://127.0.0.1:8888/'
+    //     // changeOrigin: true, //开启代理
+    //     // pathRewrite: { '^/sell': '/sell' }  //这里重写路径/run就代理到对应地址
+    //     // pathRewrite: {
+    //     //   '^/localhost': '/'
+    //     // }
+    //   }
+    // },
     proxyTable: {
-      '/admin': {
-        target: 'http://127.0.0.1:8888/'
-        // changeOrigin: true, //开启代理
-        // pathRewrite: { '^/sell': '/sell' }  //这里重写路径/run就代理到对应地址
-        // pathRewrite: {
-        //   '^/localhost': '/'
-        // }
+      '/auth': {
+        target: baseUrl,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/auth': '/auth'
+        }
+      },
+      '/user': {
+        target: baseUrl,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/user': '/user'
+        }
       }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"

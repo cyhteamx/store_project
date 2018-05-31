@@ -1,0 +1,29 @@
+MAC下mysql问题
+1.远程授权
+ mysql -u root -p
+ use mysql;
+grant all privileges on *.* to root@"%" identified by 'root' with grant option;  
+flush privileges;
+
+2.brew安装的，mac下的my.cof配置是homebrew.mxcl.mysql.plist 
+路劲:/usr/local/Cellar/mysql/5.7.16/homebrew.mxcl.mysql.plist 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>KeepAlive</key>
+  <true/>
+  <key>Label</key>
+  <string>homebrew.mxcl.mysql</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/opt/mysql/bin/mysqld_safe</string>
+    <string>--bind-address=0.0.0.0</string>这一句没有或者是127.0.0.1时，远程连接一直失败。
+    <string>--datadir=/usr/local/var/mysql</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>WorkingDirectory</key>
+  <string>/usr/local/var/mysql</string>
+</dict>
+</plist>

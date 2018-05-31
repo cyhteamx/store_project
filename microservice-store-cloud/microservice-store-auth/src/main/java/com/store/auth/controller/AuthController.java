@@ -6,7 +6,6 @@ import com.store.utils.ClientTokenUtil;
 import com.store.utils.JWTTokenUtil;
 import com.store.utils.ResultVOUtil;
 import com.store.utils.jwt.IJWTInfo;
-import com.store.vo.ObjectRestResponse;
 import com.store.vo.ResultVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,8 +33,8 @@ public class AuthController {
 
     @PostMapping("/jwt/token")
     public ResultVO<String> authorize(@RequestBody JwtAuthenticationVo jwtAuthenticationVo) throws Exception {
-        log.info("nm:{},pd:{}", jwtAuthenticationVo.getLoginname(), jwtAuthenticationVo.getPassword());
-        IJWTInfo info = authService.authByLogin(jwtAuthenticationVo.getLoginname(), jwtAuthenticationVo.getPassword());
+        log.info("nm:{},pd:{}", jwtAuthenticationVo.getUsername(), jwtAuthenticationVo.getPassword());
+        IJWTInfo info = authService.authByLogin(jwtAuthenticationVo.getUsername(), jwtAuthenticationVo.getPassword());
         ResultVO resultVO = ResultVOUtil.success(JWTTokenUtil.Singleton().generateToken(info));
         return resultVO;
     }

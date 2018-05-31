@@ -6,8 +6,8 @@ import java.util.List;
 
 /**
  * 菜单
- * Created by 廖师兄
- * 2018-04-15 21:19
+ * @author chenyouhong
+ * @since 2018-05-20
  */
 @Data
 public class MenuDTO {
@@ -19,7 +19,7 @@ public class MenuDTO {
     private String url;
 
     /** 序号. */
-    private String number;
+    private String sort;
 
     /** 菜单icon. */
     private String icon;

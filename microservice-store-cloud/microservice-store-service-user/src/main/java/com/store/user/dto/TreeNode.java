@@ -7,13 +7,16 @@ import java.util.List;
 
 /**
  * @author chenyouhong
- * @since 2018-05-09
+ * @since 2018-05-19
  *
  */
 @Data
 public class TreeNode {
+
     protected int id;
+
     protected int parentId;
+
     protected List<TreeNode> children = new ArrayList<TreeNode>();
 
     public void add(TreeNode node) {

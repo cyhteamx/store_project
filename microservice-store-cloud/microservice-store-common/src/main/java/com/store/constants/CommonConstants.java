@@ -105,7 +105,7 @@ public class CommonConstants {
     /**
      * 菜单
      */
-    public final static String MENU = "0";
+    public final static Integer MENU = 0;
 
     /**
      * 按钮

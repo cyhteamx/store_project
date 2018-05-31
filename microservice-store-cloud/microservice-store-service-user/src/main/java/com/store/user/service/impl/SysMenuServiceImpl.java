@@ -126,12 +126,12 @@ public class SysMenuServiceImpl extends ServiceImpl<ISysMenuMapper, SysMenu> imp
         roleNames.forEach(roleName -> all.addAll(findMenuByRoleName(roleName)));
         List<MenuTree> menuTreeList = new ArrayList<>();
         all.forEach(menuVo -> {
-            if (CommonConstants.MENU.equals(menuVo.getType())) {
+            if (CommonConstants.MENU == menuVo.getType()) {
                 menuTreeList.add(new MenuTree(menuVo));
             }
         });
         CollUtil.sort(menuTreeList, Comparator.comparingInt(MenuTree::getSort));
-        return TreeUtil.bulid(menuTreeList, -1);
+        return TreeUtil.bulid(menuTreeList, 0);
     }
 
 }

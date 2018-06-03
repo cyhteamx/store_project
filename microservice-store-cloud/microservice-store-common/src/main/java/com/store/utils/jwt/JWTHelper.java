@@ -10,6 +10,8 @@ import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
+import java.util.List;
+
 
 /**
  * Created by ace on 2017/9/10.
@@ -29,6 +31,7 @@ public class JWTHelper {
                 .setSubject(jwtInfo.getLoginName())
                 .claim(CommonConstants.JWT_KEY_USER_ID, jwtInfo.getId())
                 .claim(CommonConstants.JWT_KEY_NAME, jwtInfo.getName())
+                .claim(CommonConstants.JWT_KEY_ROLETYPE, jwtInfo.getRoleTypes())
                 .setExpiration(DateTime.now().offset(DateField.MINUTE,expire))
                 .signWith(SignatureAlgorithm.RS256, KeyHelper.getPrivateKey(priKeyPath))
                 .compact();
@@ -58,7 +61,14 @@ public class JWTHelper {
     public static IJWTInfo getInfoFromToken(String token, String pubKeyPath) throws Exception {
         Jws<Claims> claimsJws = parserToken(token, pubKeyPath);
         Claims body = claimsJws.getBody();
-        return new JWTInfo(body.getSubject(), StrUtil.nullToDefault((CharSequence) body.get(CommonConstants.JWT_KEY_USER_ID),""), StrUtil.nullToDefault((CharSequence) body.get(CommonConstants.JWT_KEY_NAME),""));
+        JWTInfo info = new JWTInfo(body.getSubject(), StrUtil.nullToDefault((CharSequence) body.get(CommonConstants.JWT_KEY_USER_ID),""), StrUtil.nullToDefault((CharSequence) body.get(CommonConstants.JWT_KEY_NAME),""));
+        System.out.println(body.get(CommonConstants.JWT_KEY_ROLETYPE).getClass());
+//        StrUtil.split(body.get(CommonConstants.JWT_KEY_ROLETYPE), "");
+        info.setRoleTypes((List<String>)body.get(CommonConstants.JWT_KEY_ROLETYPE));
+//        String str = StrUtil.nullToDefault((CharSequence) body.get(CommonConstants.JWT_KEY_NAME),"");
+//        info.setRoleTypes(str.toCharArray());
+        return info;
+        //        return new JWTInfo(body.getSubject(), StrUtil.nullToDefault((CharSequence) body.get(CommonConstants.JWT_KEY_USER_ID),""), StrUtil.nullToDefault((CharSequence) body.get(CommonConstants.JWT_KEY_NAME),""));
     }
 
 }

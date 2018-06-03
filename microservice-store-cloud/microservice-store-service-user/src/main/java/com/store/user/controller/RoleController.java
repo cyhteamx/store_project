@@ -9,12 +9,15 @@ import com.store.user.service.ISysRoleMenuService;
 import com.store.user.service.ISysRoleService;
 import com.store.utils.Query;
 import com.store.utils.R;
+import com.store.utils.ResultVOUtil;
+import com.store.vo.ResultVO;
 import com.store.web.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author chenyouhong
@@ -29,6 +32,17 @@ public class RoleController extends BaseController {
 
     @Autowired
     private ISysRoleMenuService sysRoleMenuService;
+
+    @GetMapping("/roleType/{username}")
+//    @ApiOperation(value = "通过ID获取")
+    public ResultVO<List<String>> findRoletypeByUsername(@PathVariable(name = "username", required = true) String username) {
+        EntityWrapper<SysRole> sysRoleWarpper = new EntityWrapper<>();
+        SysRole sysRole = new SysRole();
+        sysRole.setRoleName(username);
+        sysRoleWarpper.setEntity(sysRole);
+        List<SysRole> sysRoles = sysRoleService.selectList(sysRoleWarpper);
+        return ResultVOUtil.success(sysRoles.stream().map(e -> e.getRoleType()).collect(Collectors.toList()));
+    }
 
     /**
      * 通过ID查询角色信息

@@ -3,6 +3,7 @@ package com.store.utils;
 import com.alibaba.ttl.TransmittableThreadLocal;
 import com.store.constants.CommonConstants;
 import com.store.utils.jwt.IJWTInfo;
+import com.store.utils.jwt.JWTInfo;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import lombok.extern.slf4j.Slf4j;
@@ -25,6 +26,28 @@ public class UserUtils {
     private static final ThreadLocal<String> THREAD_LOCAL_USER = new TransmittableThreadLocal<>();
 
     private static final String KEY_USER = "user";
+
+    /**
+     * 根据请求heard中的token获取登录用户名
+     *
+     * @param httpServletRequest request
+     * @return 登录用户名
+     */
+    public static JWTInfo getUserinfo(HttpServletRequest httpServletRequest) {
+        String token = httpServletRequest.getHeader(CommonConstants.JWT_ACCESS_TOKEN);
+        JWTInfo jwtInfo = null;
+        if (!StringUtils.isBlank(token)) {
+            try {
+                IJWTInfo ijwtInfo = JWTTokenUtil.Singleton().getInfoFromToken(token);
+                log.info("检验登录access-token成功，当前登录人员为：{}", ijwtInfo.getName());
+                jwtInfo = new JWTInfo(ijwtInfo.getLoginName(), ijwtInfo.getId(), ijwtInfo.getName(), ijwtInfo.getRoleTypes());
+            } catch (Exception e) {
+                e.printStackTrace();
+
+            }
+        }
+        return jwtInfo;
+    }
 
     /**
      * 根据请求heard中的token获取登录用户名

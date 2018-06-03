@@ -4,10 +4,8 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.store.constants.CommonConstants;
 import com.store.dto.MenuDTO;
 import com.store.model.SysMenu;
-import com.store.model.SysRole;
 import com.store.user.dto.MenuTree;
 import com.store.user.service.ISysMenuService;
-import com.store.user.service.ISysRoleService;
 import com.store.user.util.TreeUtil;
 import com.store.utils.R;
 import com.store.utils.ResultVOUtil;
@@ -19,7 +17,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @author chenyouhong
@@ -31,9 +28,6 @@ public class MenuController extends BaseController {
 
     @Autowired
     private ISysMenuService sysMenuService;
-
-    @Autowired
-    private ISysRoleService sysRoleService;
 
     /**
      * 返回当前用户的树形菜单集合
@@ -62,13 +56,7 @@ public class MenuController extends BaseController {
      */
     @GetMapping(value = "/userMenu")
     public List<MenuTree> userMenu(){
-        String userName = getUserName();
-        EntityWrapper<SysRole> sysRoleWarpper = new EntityWrapper<>();
-        SysRole sysRole = new SysRole();
-        sysRole.setRoleName(userName);
-        sysRoleWarpper.setEntity(sysRole);
-        List<SysRole> sysRoles = sysRoleService.selectList(sysRoleWarpper);
-        return sysMenuService.findUserMenuTree(sysRoles.stream().map(e -> e.getRoleType().toString()).collect(Collectors.toList()));
+        return sysMenuService.findUserMenuTree(getUserinfo().getRoleTypes());
 //        return sysMenuService.findUserMenuTree(getRole());
     }
 
@@ -172,7 +160,7 @@ public class MenuController extends BaseController {
 
     @PutMapping
     public R<Boolean> menuUpdate(@RequestBody SysMenu sysMenu) {
-        return new R<>(sysMenuService.updateMenuById(sysMenu,getRole().get(0)));
+        return new R<>(sysMenuService.updateMenuById(sysMenu, getUserinfo().getRoleTypes().get(0)));
     }
 
     private List<MenuTree> getMenuTree(List<SysMenu> menus, int root) {

@@ -1,4 +1,4 @@
-mapGetters<template>
+<template>
   <div class="app-container calendar-list-container">
     <div class="filter-container">
       <el-button-group>
@@ -31,10 +31,10 @@ mapGetters<template>
         <el-card class="box-card">
           <el-form :label-position="labelPosition" label-width="80px" :model="form" ref="form">
             <el-form-item label="父级节点" prop="parentId">
-              <el-input v-model="form.parentId" :disabled="formEdit" placeholder="请输入父级节点"></el-input>
+              <el-input v-model="form.parentId" :disabled="true" placeholder="请输入父级节点"></el-input>
             </el-form-item>
-            <el-form-item label="节点ID" prop="parentId">
-              <el-input v-model="form.menuId" :disabled="formEdit" placeholder="请输入节点ID"></el-input>
+            <el-form-item label="节点ID" prop="id">
+              <el-input v-model="form.id" :disabled="formEdit" placeholder="请输入节点ID"></el-input>
             </el-form-item>
             <el-form-item label="标题" prop="name">
               <el-input v-model="form.name" :disabled="formEdit"  placeholder="请输入标题"></el-input>
@@ -117,7 +117,7 @@ mapGetters<template>
         form: {
           permission: undefined,
           name: undefined,
-          menuId: undefined,
+          id: undefined,
           parentId: undefined,
           url: undefined,
           icon: undefined,
@@ -128,9 +128,9 @@ mapGetters<template>
           path: undefined
         },
         currentId: -1,
-        // menuManager_btn_add: false,
-        // menuManager_btn_edit: false,
-        // menuManager_btn_del: false
+        menuManager_btn_add: false,
+        menuManager_btn_edit: false,
+        menuManager_btn_del: false
       }
     },
     filters: {
@@ -167,12 +167,12 @@ mapGetters<template>
       },
 
       nodeExpand(data) {
-          let aChildren = data.children
-          if (aChildren.length > 0) {
-            this.oExpandedKey[data.id] = true
-            this.oTreeNodeChildren[data.id] = aChildren
-          }
-          this.setExpandedKeys()
+        let aChildren = data.children
+        if (aChildren.length > 0) {
+          this.oExpandedKey[data.id] = true
+          this.oTreeNodeChildren[data.id] = aChildren
+        }
+        this.setExpandedKeys()
       },
       nodeCollapse(data) {
         this.oExpandedKey[data.id] = false
@@ -271,7 +271,7 @@ mapGetters<template>
         this.form = {
           permission: undefined,
           name: undefined,
-          menuId: undefined,
+          id: undefined,
           parentId: this.currentId,
           url: undefined,
           icon: undefined,

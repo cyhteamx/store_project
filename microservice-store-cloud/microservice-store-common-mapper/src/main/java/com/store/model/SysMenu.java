@@ -43,6 +43,11 @@ public class SysMenu extends Model<SysMenu> {
 	 */
 	private String url;
 
+	/**
+	 * 请求方法
+	 */
+	private String method;
+
     /**
      * 排序值
      */

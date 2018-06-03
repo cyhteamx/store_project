@@ -1,6 +1,7 @@
 package com.store.web;
 
 import com.store.utils.UserUtils;
+import com.store.utils.jwt.JWTInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.http.HttpServletRequest;
@@ -31,6 +32,14 @@ public class BaseController {
      */
     public String getUserName() {
         return UserUtils.getUserName(request);
+    }
+
+    /**
+     * 获取登陆用户信息
+     * @return
+     */
+    public JWTInfo getUserinfo() {
+        return UserUtils.getUserinfo(request);
     }
 
 }

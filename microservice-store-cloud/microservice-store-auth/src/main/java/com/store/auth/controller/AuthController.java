@@ -26,8 +26,8 @@ public class AuthController {
     @RequestMapping(value = "/client/token",method = RequestMethod.POST)
     public ResultVO<String> authorize(@RequestParam("si") String serviceId, @RequestParam("st") String secret) throws Exception {
         log.info("si:{},st:{}",serviceId,secret);
-        IJWTInfo ijwtInfo = authService.authByService(serviceId, secret);
-        ResultVO resultVO = ResultVOUtil.success(ClientTokenUtil.Singleton().generateToken(ijwtInfo));
+        IJWTInfo ijwtIenfo = authService.authByService(serviceId, secret);
+        ResultVO resultVO = ResultVOUtil.success(ClientTokenUtil.Singleton().generateToken(ijwtIenfo));
         return resultVO;
     }
 

@@ -34,6 +34,11 @@ public class MenuVO {
     private String url;
 
     /**
+     * 请求方法
+     */
+    private String method;
+
+    /**
      * 一个路径
      */
     private String path;

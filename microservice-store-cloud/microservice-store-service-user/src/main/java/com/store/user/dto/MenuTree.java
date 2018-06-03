@@ -17,6 +17,11 @@ public class MenuTree extends TreeNode {
 
     private String url;
 
+    /**
+     * 请求方法
+     */
+    private String method;
+
     private boolean spread = false;
 
     private String path;

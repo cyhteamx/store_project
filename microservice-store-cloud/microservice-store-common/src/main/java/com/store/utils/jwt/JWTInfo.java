@@ -1,14 +1,23 @@
 package com.store.utils.jwt;
 
+import lombok.Data;
+
 import java.io.Serializable;
+import java.util.List;
 
 /**
- * Created by ace on 2017/9/10.
+ * Created by chenyouhng on 2018/6/3.
  */
+@Data
 public class JWTInfo implements Serializable,IJWTInfo {
+
     private String loginName;
+
     private String userId;
+
     private String name;
+
+    private List<String> roleTypes;
 
     public JWTInfo(String loginName, String userId, String name) {
         this.loginName = loginName;
@@ -16,29 +25,36 @@ public class JWTInfo implements Serializable,IJWTInfo {
         this.name = name;
     }
 
-    public String getLoginName() {
-        return loginName;
+    public JWTInfo(String loginName, String userId, String name, List<String> roleTypes) {
+        this.loginName = loginName;
+        this.userId = userId;
+        this.name = name;
+        this.roleTypes = roleTypes;
     }
 
-    public void setLoginName(String loginName) {
-        this.loginName = loginName;
-    }
+//    public String getLoginName() {
+//        return loginName;
+//    }
+//
+//    public void setLoginName(String loginName) {
+//        this.loginName = loginName;
+//    }
 
     public String getId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+//    public void setUserId(String userId) {
+//        this.userId = userId;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 
     @Override
     public boolean equals(Object o) {

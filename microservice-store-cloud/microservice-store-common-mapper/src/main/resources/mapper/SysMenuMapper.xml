@@ -8,6 +8,7 @@
         <result column="name" property="name" />
         <result column="permission" property="permission" />
         <result column="url" property="url" />
+        <result column="method" property="method" />
         <result column="sort" property="sort" />
         <result column="isleaf" property="isLeaf" />
         <result column="level" property="level" />
@@ -26,6 +27,7 @@
         <result column="name" property="name" />
         <result column="permission" property="permission" />
         <result column="url" property="url" />
+        <result column="method" property="method" />
         <result column="sort" property="sort" />
         <result column="isleaf" property="isLeaf" />
         <result column="level" property="level" />

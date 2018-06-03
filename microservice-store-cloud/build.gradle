@@ -220,6 +220,9 @@ project("microservice-store-auth") {
         compile("org.springframework.cloud:spring-cloud-starter-oauth2")
         compile("org.springframework.cloud:spring-cloud-starter-security")
         compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '2.3.2.RELEASE'
+        compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+
+//        compile(project(":microservice-store-common-mapper"))
 
 //        compile("org.springframework.security:spring-security-data")
 //        compile('org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure')
@@ -227,7 +230,6 @@ project("microservice-store-auth") {
 //        compile("org.springframework.boot:spring-boot-autoconfigure")
 //        compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.0.1.RELEASE'
 //        compile("org.springframework.boot:spring-boot-starter-data-jpa")
-        compile("mysql:mysql-connector-java")
 
     }
 }

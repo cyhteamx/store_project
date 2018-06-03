@@ -31,10 +31,13 @@
 			*
 		FROM
 			tb_sys_role r
-		LEFT JOIN tb_sys_role_dept rd ON rd.role_id = r.role_id
-		LEFT JOIN tb_sys_dept d ON rd.dept_id = d.id
-		WHERE r.del_flag = 0
-		ORDER BY r.role_id ASC
+				LEFT JOIN
+			tb_sys_role_dept rd ON rd.id = r.id
+				LEFT JOIN
+			tb_sys_dept d ON rd.dept_id = d.id
+		WHERE
+			r.del_flag = 0
+		ORDER BY r.id ASC
 	</select>
 
 	<select id="selectListByDeptId" resultMap="BaseResultMap">

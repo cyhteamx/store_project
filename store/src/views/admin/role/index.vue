@@ -9,7 +9,7 @@
 
       <el-table-column align="center" label="序号">
         <template slot-scope="scope">
-          <span>{{scope.row.roleId}}</span>
+          <span>{{scope.row.id}}</span>
         </template>
       </el-table-column>
 
@@ -21,7 +21,7 @@
 
       <el-table-column align="center" label="角色标识">
         <template slot-scope="scope">
-          <span>{{scope.row.roleCode}}</span>
+          <span>{{scope.row.roleType}}</span>
         </template>
       </el-table-column>
 
@@ -65,8 +65,8 @@
         <el-form-item label="角色名称" prop="roleName">
           <el-input v-model="form.roleName" placeholder="角色名称"></el-input>
         </el-form-item>
-        <el-form-item label="角色标识" prop="roleCode">
-          <el-input v-model="form.roleCode" placeholder="角色标识"></el-input>
+        <el-form-item label="角色标识" prop="roleType">
+          <el-input v-model="form.roleType" placeholder="角色标识"></el-input>
         </el-form-item>
         <el-form-item label="描述" prop="roleDesc">
           <el-input v-model="form.roleDesc" placeholder="描述"></el-input>
@@ -92,7 +92,7 @@
       <el-tree class="filter-tree" :data="treeData" :default-checked-keys="checkedKeys" check-strictly node-key="id" highlight-current :props="defaultProps" show-checkbox ref="menuTree" :filter-node-method="filterNode" default-expand-all>
       </el-tree>
       <div slot="footer" class="dialog-footer">
-        <el-button type="primary" @click="updatePermession(roleId, roleCode)">更 新</el-button>
+        <el-button type="primary" @click="updatePermession(id, roleType)">更 新</el-button>
       </div>
     </el-dialog>
   </div>
@@ -136,13 +136,13 @@ export default {
       },
       form: {
         roleName: undefined,
-        roleCode: undefined,
+        roleType: undefined,
         roleDesc: undefined,
         deptName: undefined,
         roleDeptId: undefined
       },
-      roleId: undefined,
-      roleCode: undefined,
+      id: undefined,
+      roleType: undefined,
       rules: {
         roleName: [
           {
@@ -157,7 +157,7 @@ export default {
             trigger: "blur"
           }
         ],
-        roleCode: [
+        roleType: [
           {
             required: true,
             message: "角色标识",
@@ -236,7 +236,7 @@ export default {
       this.dialogFormVisible = true;
     },
     handleUpdate(row) {
-      getObj(row.roleId).then(response => {
+      getObj(row.id).then(response => {
         this.form = response.data;
         this.form.deptName = row.deptName;
         this.form.roleDeptId = row.roleDeptId;
@@ -245,7 +245,7 @@ export default {
       });
     },
     handlePermission(row) {
-      fetchRoleTree(row.roleCode)
+      fetchRoleTree(row.roleType)
         .then(response => {
           this.checkedKeys = response.data;
           return fetchTree();
@@ -254,8 +254,8 @@ export default {
           this.treeData = response.data;
           this.dialogStatus = "permission";
           this.dialogPermissionVisible = true;
-          this.roleId = row.roleId;
-          this.roleCode = row.roleCode;
+          this.id = row.id;
+          this.roleType = row.roleType;
         });
     },
     handleDept() {
@@ -275,7 +275,7 @@ export default {
       console.log(data);
     },
     handleDelete(row) {
-      delObj(row.roleId).then(response => {
+      delObj(row.id).then(response => {
         this.dialogFormVisible = false;
         this.getList();
         this.$notify({
@@ -329,13 +329,13 @@ export default {
         }
       });
     },
-    updatePermession(roleId, roleCode) {
-      permissionUpd(roleId, this.$refs.menuTree.getCheckedKeys()).then(() => {
+    updatePermession(id, roleType) {
+      permissionUpd(id, this.$refs.menuTree.getCheckedKeys()).then(() => {
         this.dialogPermissionVisible = false;
         fetchTree()
           .then(response => {
             this.treeData = response.data;
-            return fetchRoleTree(roleCode);
+            return fetchRoleTree(roleType);
           })
           .then(response => {
             this.checkedKeys = response.data;
@@ -352,7 +352,7 @@ export default {
       this.form = {
         id: undefined,
         roleName: undefined,
-        roleCode: undefined,
+        roleType: undefined,
         roleDesc: undefined
       };
     }

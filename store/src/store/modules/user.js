@@ -142,7 +142,6 @@ const user = {
       state
     }) {
       return new Promise((resolve, reject) => {
-        logout(state.access_token, state.refresh_token).then(() => {
           // 清除菜单
           commit('SET_MENU', [])
           // 清除权限
@@ -155,9 +154,24 @@ const user = {
           commit('DEL_ALL_TAG')
           removeToken()
           resolve()
-        }).catch(error => {
-          reject(error)
-        })
+        //
+        //
+        // logout(state.access_token, state.refresh_token).then(() => {
+        //   // 清除菜单
+        //   commit('SET_MENU', [])
+        //   // 清除权限
+        //   commit('SET_PERMISSIONS', [])
+        //   // 清除用户信息
+        //   commit('SET_USER_INFO', {})
+        //   commit('SET_ACCESS_TOKEN', '')
+        //   commit('SET_REFRESH_TOKEN', '')
+        //   commit('SET_ROLES', [])
+        //   commit('DEL_ALL_TAG')
+        //   removeToken()
+        //   resolve()
+        // }).catch(error => {
+        //   reject(error)
+        // })
       })
     },
     // 注销session

@@ -53,9 +53,9 @@ eureka:
 #    sensitive: false
 #    enabled: true
 ###刷新时，关闭安全验证
-#management:
-#  security:
-#    enabled: false
+management:
+  security:
+    enabled: false
 ####actuator认证 end####
 #security:
 #  #白名单配置
@@ -103,6 +103,29 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: true
+
+ignore:
+  anon:
+    - /authentication/**
+    - /oauth/**
+    - /**/*.css
+    - /social
+    - /signin
+    - /signup
+    - /info
+    - /health
+    - /metrics/**
+    - /loggers/**
+    - /mobile/token
+    - /jwt/token
+    - /user/code/*
+    - /code/*
+
+pig:
+  auth:
+    client_id: store
+    client_secret: store
+    scope: webclient
 
 logging:
   level:

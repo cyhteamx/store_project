@@ -14,7 +14,7 @@
 let baseUrl = '';
 let iconfontVersion = ['567566_r22zi6t8noas8aor', '599693_0b5sleso3f1j1yvi'];
 let iconfontUrl = `//at.alicdn.com/t/font_$key.css`;
-let codeUrl = `/admin/code`
+let codeUrl = `/user/code`
 if (process.env.NODE_ENV == 'development') {
   baseUrl = `http://127.0.0.1:8888`;
 } else if (process.env.NODE_ENV == 'production') {

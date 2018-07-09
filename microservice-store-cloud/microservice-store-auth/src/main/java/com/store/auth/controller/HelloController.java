@@ -1,6 +1,6 @@
 package com.store.auth.controller;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,5 +28,11 @@ public class HelloController {
     @RequestMapping(value = "/doLogin",method = RequestMethod.POST)
     public void doLogin(String username,String password){
         System.out.println(username);
+    }
+
+    public static void main(String[] args) {
+        String finalSecret = new BCryptPasswordEncoder().encode("admin");
+        System.out.println(finalSecret);
+
     }
 }

@@ -101,7 +101,7 @@ public class CommonConstants {
     /**
      * 锁定
      */
-    public final static String STATUS_LOCK = "9";
+    public final static Integer STATUS_LOCK = 9;
 
     /**
      * 菜单
@@ -132,5 +132,10 @@ public class CommonConstants {
      * 阿里大鱼
      */
     public final static String ALIYUN_SMS = "aliyun_sms";
+
+    /**
+     * 路由信息Redis保存的key
+     */
+    public final static String ROUTE_KEY = "_ROUTE_KEY";
 
 }

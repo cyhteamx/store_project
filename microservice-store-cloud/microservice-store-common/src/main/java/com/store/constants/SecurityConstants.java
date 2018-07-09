@@ -125,4 +125,29 @@ public class SecurityConstants {
      * 默认的social的注册地址
      */
     public static final String DEFAULT_SOCIAL_SIGNUP_URL = "/social/signup";
+
+
+    /**
+     * sys_oauth_client_details 表的字段，不包括client_id、client_secret
+     */
+    public static final String CLIENT_FIELDS = "client_id, client_secret, resource_ids, scope, "
+            + "authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, "
+            + "refresh_token_validity, additional_information, autoapprove";
+
+    /**
+     *JdbcClientDetailsService 查询语句
+     */
+    public static final String BASE_FIND_STATEMENT = "select " + CLIENT_FIELDS
+            + " from tb_sys_oauth_client_details";
+
+    /**
+     * 默认的查询语句
+     */
+    public static final String DEFAULT_FIND_STATEMENT = BASE_FIND_STATEMENT + " order by client_id";
+
+    /**
+     * 按条件client_id 查询
+     */
+    public static final String DEFAULT_SELECT_STATEMENT = BASE_FIND_STATEMENT + " where client_id = ?";
+
 }

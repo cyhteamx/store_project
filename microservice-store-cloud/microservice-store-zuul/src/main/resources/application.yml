@@ -10,32 +10,32 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-zuul:
-#  sensitiveHeaders:
-#  sensitiveHeaders: "*"  #敏感headers也支持全局设置(必须这样设置)
-  add-proxy-headers: true  #X-Forwarder-Host请求头默认添加到转发请求中
-#  ignoreSecurityHeaders: false
-  routes:
-    auth:
-      path: /auth/**
+#zuul:
+##  sensitiveHeaders:
+##  sensitiveHeaders: "*"  #敏感headers也支持全局设置(必须这样设置)
+#  add-proxy-headers: true  #X-Forwarder-Host请求头默认添加到转发请求中
+##  ignoreSecurityHeaders: false
+#  routes:
+#    auth:
+#      path: /auth/**
 #      sensitive-headers:
-      stripPrefix: true
-      serviceId: microservice-store-auth
-      sensitiveHeaders:
-    admin:
-      path: /admin/**
-      serviceId: microservice-store-web-admin
-      sensitiveHeaders:
-    user:
-      path: /user/**
-      stripPrefix: true
-      serviceId: microservice-store-service-user
-      sensitiveHeaders:
-    product:
-      path: /product/**
-      stripPrefix: false
-      serviceId: microservice-store-service-product
-      sensitiveHeaders:
+#      stripPrefix: true
+#      serviceId: microservice-store-auth
+#      sensitiveHeaders:
+#    admin:
+#      path: /admin/**
+#      serviceId: microservice-store-web-admin
+#      sensitiveHeaders:
+#    user:
+#      path: /user/**
+#      stripPrefix: true
+#      serviceId: microservice-store-service-user
+#      sensitiveHeaders:
+#    product:
+#      path: /product/**
+#      stripPrefix: false
+#      serviceId: microservice-store-service-product
+#      sensitiveHeaders:
 #  add-proxy-headers: true
 #  add-host-header: true
 #  sensitive-headers:
@@ -45,17 +45,32 @@ zuul:
 client:
   secret: store
 
-while-list:
-  uriWhiteList:
+ignore:
+  urls:
 #    - /admin/login
 #    - /admin/menu/list
 #    - /user/menu/list
-#    - /auth/oauth/token
+    - /auth/oauth/token
+    - /oauth/token
 #    - /auth/oauth/authorize
 #    - /auth/oauth/user
 #    - /auth/client/token
     - /auth/jwt/token
-
+    - /mobile/**
+    - /auth/**
+    - /admin/code/*
+    - /user/code/*
+    - /code/*
+    - /admin/smsCode/*
+    - /admin/user/info
+    - /admin/menu/userMenu
+    - /swagger-resources/**
+    - /swagger-ui.html
+    - /*/v2/api-docs
+    - /swagger/api-docs
+    - /webjars/**
+  clients:
+    - app
 
 
 
@@ -84,3 +99,38 @@ while-list:
 
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 70000
 
+zuul:
+#  ribbon:
+#    eager-load:
+#      enabled: true
+#      clients: pig-auth,pig-upms-service,pig-demo-service
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 10000
+  ratelimit:
+    key-prefix: pig-ratelimite
+    enabled: true
+    repository: REDIS
+    behind-proxy: true
+#    policies:
+#      pig-upms-service:
+#        limit: 100
+#        quota: 100
+#        refresh-interval: 3
+
+security:
+  validate:
+    code: false
+    preview: false
+  sessions: stateless
+#  oauth2:
+#    client:
+#      client-id: store
+#      client-secret: store
+#    resource:
+#      loadBalanced: true
+#      token-info-uri: http://127.0.0.1:9060/auth/oauth/check-token
+#      service-id: microservice-store-auth
+#      jwt:
+#         key-uri: http://127.0.0.1:9060/auth/oauth/token_key #解析jwt令牌所需要密钥的地址

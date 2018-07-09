@@ -35,6 +35,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author chenyouhong
@@ -152,7 +153,7 @@ public class SysUserServiceImpl extends ServiceImpl<ISysUserMapper, SysUser> imp
      */
     @Override
     public void saveImageCode(String randomStr, String imageCode) {
-        //redisTemplate.opsForValue().set(SecurityConstants.DEFAULT_CODE_KEY + randomStr, imageCode, SecurityConstants.DEFAULT_IMAGE_EXPIRE, TimeUnit.SECONDS);
+        redisTemplate.opsForValue().set(SecurityConstants.DEFAULT_CODE_KEY + randomStr, imageCode, SecurityConstants.DEFAULT_IMAGE_EXPIRE, TimeUnit.SECONDS);
     }
 
     /**

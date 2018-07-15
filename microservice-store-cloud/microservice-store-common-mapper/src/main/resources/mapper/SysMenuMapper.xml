@@ -41,6 +41,21 @@
         <result column="update_time" property="updateTime" />
     </resultMap>
 
+    <!--<select id="findMenuByRoleName" resultMap="MenuVoResultMap">-->
+        <!--SELECT-->
+            <!--c.*-->
+        <!--FROM-->
+            <!--tb_sys_role a-->
+                <!--LEFT JOIN-->
+            <!--tb_sys_role_menu b ON b.role_id = a.id-->
+                <!--LEFT JOIN-->
+            <!--tb_sys_menu c ON c.id = b.menu_id-->
+        <!--WHERE-->
+            <!--a.del_flag = 0 AND c.del_flag = 0-->
+                <!--AND a.role_type = #{role}-->
+        <!--ORDER BY c.sort DESC;-->
+    <!--</select>-->
+
     <select id="findMenuByRoleName" resultMap="MenuVoResultMap">
         SELECT
             c.*
@@ -52,7 +67,6 @@
             tb_sys_menu c ON c.id = b.menu_id
         WHERE
             a.del_flag = 0 AND c.del_flag = 0
-                AND a.role_type = #{role}
         ORDER BY c.sort DESC;
     </select>
 

@@ -27,6 +27,7 @@ import java.io.PrintWriter;
 @Slf4j
 @Component
 public class PigAccessDeniedHandler extends OAuth2AccessDeniedHandler {
+
     @Autowired
     private ObjectMapper objectMapper;
 
@@ -44,7 +45,7 @@ public class PigAccessDeniedHandler extends OAuth2AccessDeniedHandler {
         log.info("授权失败，禁止访问 {}", request.getRequestURI());
         response.setCharacterEncoding(CommonConstants.UTF8);
         response.setContentType(CommonConstants.CONTENT_TYPE);
-        //TODO
+        //TODO角色列表为空
         R<String> result = new R<>(new PigDeniedException("授权失败，禁止访问"));
         response.setStatus(HttpStatus.SC_FORBIDDEN);
         PrintWriter printWriter = response.getWriter();

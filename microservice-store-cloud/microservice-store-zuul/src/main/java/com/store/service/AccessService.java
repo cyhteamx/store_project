@@ -6,12 +6,11 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.exceptions.ValidateException;
 import cn.hutool.core.lang.Validator;
 import com.store.config.WhiteListConfig;
-//import common.util.jwt.IJWTInfo;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
+
+//import common.util.jwt.IJWTInfo;
 
 /**
  * AccessService.class
@@ -20,8 +19,8 @@ import java.util.List;
  * @author lupo
  * @date 2018/2/14 9:11
  */
-@Component
-@Slf4j
+//@Component
+//@Slf4j
 public class AccessService {
 
     @Autowired

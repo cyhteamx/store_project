@@ -1,8 +1,8 @@
 package com.store.user.util;
 
 /**
- * @author lengleng
- * @date 2017/10/29
+ * @author chenyouhong
+ * @date 2018/07/15
  */
 public class PigResourcesGenerator {
 

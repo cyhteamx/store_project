@@ -2,7 +2,7 @@ package com.store.vo;
 
 import lombok.Data;
 
-import java.util.ArrayList;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -10,7 +10,9 @@ import java.util.List;
  * @since 2018-05-09
  */
 @Data
-public class UserVO {
+public class UserVO implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     /**
      * 主键ID
@@ -65,5 +67,6 @@ public class UserVO {
     /**
      * 角色列表
      */
-    private List<SysRole> roleList = new ArrayList<>();
+    private List<SysRole> roleList;
+
 }

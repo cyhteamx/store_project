@@ -37,6 +37,7 @@ NProgress.configure({ showSpinner: false })// NProgress Configuration
 let msg
 // HTTPrequest拦截
 axios.interceptors.request.use(config => {
+  debugger
   NProgress.start() // start progress bar
   if (store.getters.access_token) {
     config.headers['Authorization'] = 'Bearer ' + getToken() // 让每个请求携带token--['X-Token']为自定义key 请根据实际情况自行修改

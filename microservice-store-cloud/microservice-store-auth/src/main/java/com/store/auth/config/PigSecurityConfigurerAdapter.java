@@ -62,8 +62,9 @@ public class PigSecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         ExpressionUrlAuthorizationConfigurer<HttpSecurity>.ExpressionInterceptUrlRegistry registry =
-                http.requestMatchers().anyRequest()
-                        .and()
+                http
+//                        .requestMatchers().anyRequest()
+//                        .and()
 //                        .formLogin().loginPage("/authentication/require")
 //                        OAUTH_CLIENT_DETAILS.loginProcessingUrl("/authentication/form")
 //                        .and()

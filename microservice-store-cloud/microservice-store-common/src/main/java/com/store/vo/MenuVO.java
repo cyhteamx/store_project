@@ -2,6 +2,7 @@ package com.store.vo;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -11,7 +12,9 @@ import java.util.Date;
  * @since 2018-05-19
  */
 @Data
-public class MenuVO {
+public class MenuVO implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     /**
      * 菜单ID

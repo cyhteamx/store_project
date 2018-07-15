@@ -1,5 +1,6 @@
 package com.store.auth.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.store.auth.entity.UserDetailsImpl;
 import com.store.auth.service.IUserService;
 import com.store.vo.UserVO;
@@ -14,8 +15,8 @@ import org.springframework.stereotype.Service;
  * Time:16:37
  * ProjectName:Mirco-Service-Skeleton
  */
-@Service
 @Slf4j
+@Service("userDetailService")
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
@@ -29,7 +30,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetailsImpl loadUserByUsername(String username) throws UsernameNotFoundException {
         UserVO userVo = userService.findUserByUsername(username);
-        return new UserDetailsImpl(userVo);
+        UserDetailsImpl userDetails = new UserDetailsImpl(userVo);
+        System.out.println(JSON.toJSONString(userDetails.getAuthorities()));
+        return userDetails;
         //        RcUserEntity userEntity = new RcUserEntity();
 ////        RcUserEntity userEntity = userService.findByUsername(username);
 //        if (userEntity == null) {

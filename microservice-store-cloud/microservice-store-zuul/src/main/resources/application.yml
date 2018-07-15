@@ -120,17 +120,19 @@ zuul:
 #        refresh-interval: 3
 
 security:
+  auth:
+    server: http://localhost:9060
   validate:
     code: false
     preview: false
   sessions: stateless
-#  oauth2:
-#    client:
-#      client-id: store
-#      client-secret: store
-#    resource:
-#      loadBalanced: true
-#      token-info-uri: http://127.0.0.1:9060/auth/oauth/check-token
-#      service-id: microservice-store-auth
-#      jwt:
-#         key-uri: http://127.0.0.1:9060/auth/oauth/token_key #解析jwt令牌所需要密钥的地址
+  oauth2:
+    client:
+      client-id: store
+      client-secret: store
+    resource:
+      loadBalanced: true
+      token-info-uri: ${security.auth.server}/oauth/check-token
+      service-id: microservice-store-zuul
+      jwt:
+         key-uri: ${security.auth.server}/oauth/token_key #解析jwt令牌所需要密钥的地址

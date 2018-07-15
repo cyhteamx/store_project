@@ -1,6 +1,6 @@
 package com.store.config;
 
-import com.store.filter.FilterIgnorePropertiesConfig;
+import com.store.bean.config.FilterIgnorePropertiesConfig;
 import com.store.handler.PigAccessDeniedHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -39,7 +39,8 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
         ExpressionUrlAuthorizationConfigurer<HttpSecurity>.ExpressionInterceptUrlRegistry registry = http
                 .authorizeRequests();
         filterIgnorePropertiesConfig.getUrls().forEach(url -> registry.antMatchers(url).permitAll());
-        registry.anyRequest().access("@permissionService.hasPermission(request,authentication)");
+        registry.anyRequest()
+                .access("@permissionService.hasPermission(request, authentication)");
     }
 
     @Override

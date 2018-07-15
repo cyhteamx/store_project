@@ -3,6 +3,7 @@ package com.store.service.impl;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.StrUtil;
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.toolkit.StringUtils;
 import com.store.feign.MenuService;
 import com.store.service.PermissionService;
@@ -42,6 +43,7 @@ public class PermissionServiceImpl implements PermissionService {
         List<SimpleGrantedAuthority> grantedAuthorityList = (List<SimpleGrantedAuthority>) authentication.getAuthorities();
         boolean hasPermission = false;
 
+        System.out.println(JSON.toJSON(authentication.getAuthorities()));
         if (principal != null) {
             if (CollectionUtil.isEmpty(grantedAuthorityList)) {
                 log.warn("角色列表为空：{}", authentication.getPrincipal());
@@ -58,7 +60,9 @@ public class PermissionServiceImpl implements PermissionService {
                 }
             }
 
+            System.out.println(request.getRequestURI());
             for (MenuVO menu : urls) {
+                System.out.println(menu.getUrl());
                 if (StringUtils.isNotEmpty(menu.getUrl()) && antPathMatcher.match(menu.getUrl(), request.getRequestURI())
                         && request.getMethod().equalsIgnoreCase(menu.getMethod())) {
                     hasPermission = true;

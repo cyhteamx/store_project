@@ -53,6 +53,9 @@ configure(allprojects) { project ->
     ext.commonsIoVersion                    = '2.6'
     ext.springCloudStarterBusAmqpVersion    = '2.0.0'
     ext.kaptchaVersion                      = '0.0.9'
+    ext.springCloudStarterConfigVersion     = '2.0.0.RELEASE'
+
+
 
 
     apply plugin: "java"
@@ -165,13 +168,14 @@ project("microservice-store-zuul") {
     dependencies {
         compile(project(":microservice-store-common"))
         compile("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
-        compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+        compile("org.springframework.cloud:spring-cloud-starter-openfeign")
         compile("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
         compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
         compile("org.springframework.cloud:spring-cloud-starter-oauth2")
         compile("io.springfox:springfox-swagger-ui:${springfoxSwaggerUiVersion}")
 //        compile("com.marcosbarbero.cloud:spring-cloud-zuul-ratelimit:${springCloudZuulRatelimitVersion}")
         compile group: 'com.marcosbarbero.cloud', name: 'spring-cloud-zuul-ratelimit-core', version: '1.7.2.RELEASE'
+//        compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: '2.0.0.RELEASE'
 
 //        compile("org.springframework.cloud:spring-cloud-starter-security")
 
@@ -226,7 +230,9 @@ project("microservice-store-common") {
         compile("com.github.ulisesbocchio:jasypt-spring-boot-starter:${jasyptSprinBbootStarterVersion}")
         compile("commons-io:commons-io:${commonsIoVersion}")
 //        compile("org.springframework.cloud:spring-cloud-starter-bus-amqp:${springCloudStarterBusAmqpVersion}")
-
+//springCloudStarterConfigVersion
+        compile("org.springframework.cloud:spring-cloud-starter-config")
+        compile("org.springframework.boot:spring-boot-starter-aop")
 
 //        compile("org.springframework.security:spring-security-crypto:${springSecurityCryptoVersion}")
 

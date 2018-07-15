@@ -5,6 +5,7 @@ import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
+import com.store.bean.config.FilterIgnorePropertiesConfig;
 import com.store.constants.SecurityConstants;
 import com.store.exception.ValidateCodeException;
 import com.store.utils.AuthUtils;

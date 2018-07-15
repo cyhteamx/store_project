@@ -11,14 +11,13 @@ export const login = (params) => {
   })
 }
 
-
 export const loginByUsername = (username, password, code, randomStr) => {
   var grant_type = 'password'
   var scope = 'server'
   return request({
     url: '/auth/oauth/token',
     headers: {
-      'Authorization': 'Basic cGlnOnBpZw=='
+      'Authorization': 'Basic c3RvcmU6c3RvcmU='
     },
     method: 'post',
     params: { username, password, randomStr, code, grant_type, scope }
@@ -31,7 +30,7 @@ export function mobileLogin(mobile, code) {
   return request({
     url: '/auth/mobile/token',
     headers: {
-      'Authorization': 'Basic cGlnOnBpZw=='
+      'Authorization': 'Basic c3RvcmU6c3RvcmU='
     },
     method: 'post',
     params: { mobile, code, grant_type, scope }

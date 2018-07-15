@@ -56,8 +56,8 @@ public class MenuController extends BaseController {
      */
     @GetMapping(value = "/userMenu")
     public List<MenuTree> userMenu(){
-        return sysMenuService.findUserMenuTree(getUserinfo().getRoleTypes());
-//        return sysMenuService.findUserMenuTree(getRole());
+//        return sysMenuService.findUserMenuTree(getUserinfo().getRoleTypes());
+        return sysMenuService.findUserMenuTree(getRole());
     }
 
     /**

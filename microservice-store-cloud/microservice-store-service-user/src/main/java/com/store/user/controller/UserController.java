@@ -47,10 +47,10 @@ public class UserController extends BaseController {
      */
     @GetMapping("/info")
     public R<UserInfo> user(UserVO userVo) {
-        String username = getUserName();
-        userVo.setUsername(username);
-//        UserInfo userInfo = userService.findUserInfo(userVo);
-        UserInfo userInfo = userService.findUserInfo(userService.findUserByUsername(username));
+//        String username = getUserName();
+//        userVo.setUsername(username);
+        UserInfo userInfo = userService.findUserInfo(userVo);
+//        UserInfo userInfo = userService.findUserInfo(userService.findUserByUsername(username));
         return new R<>(userInfo);
     }
 

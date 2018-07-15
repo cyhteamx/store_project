@@ -17,7 +17,6 @@ export default new VueRouter({
   // mode: 'history',
   strict: process.env.NODE_ENV !== 'production',
   scrollBehavior(to, from, savedPosition) {
-    console.info("ok");
     if (savedPosition) {
       return savedPosition
     } else {

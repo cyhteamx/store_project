@@ -8,8 +8,8 @@ import com.store.model.SysRoleDept;
   * 角色与部门对应关系 Mapper 接口
  * </p>
  *
- * @author lengleng
- * @since 2018-01-20
+ * @author chenyouhong
+ * @since 2018-07-15
  */
 public interface ISysRoleDeptMapper extends BaseMapper<SysRoleDept> {
 

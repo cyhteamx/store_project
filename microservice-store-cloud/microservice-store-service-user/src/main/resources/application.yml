@@ -1,5 +1,9 @@
 server:
   port: 8101
+#Redis cache 过期时间设置
+redis:
+  cache:
+    expiration: 3600
 
 spring:
   application:

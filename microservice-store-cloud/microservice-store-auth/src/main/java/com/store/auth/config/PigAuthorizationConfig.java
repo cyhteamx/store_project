@@ -114,9 +114,9 @@ public class PigAuthorizationConfig extends AuthorizationServerConfigurerAdapter
         PigJwtAccessTokenConverter jwtAccessTokenConverter = new PigJwtAccessTokenConverter();
 //        jwtAccessTokenConverter.setSigningKey(CommonConstants.SIGN_KEY);
 
-        jwtAccessTokenConverter.setSigningKey(privateKeySigningKey);
-        jwtAccessTokenConverter.setVerifierKey(publicVerifyKey);
-
+        jwtAccessTokenConverter.setSigningKey(SecurityConstants.PRIVATE_KEY_SIGNING_KEY);
+        jwtAccessTokenConverter.setVerifierKey(SecurityConstants.PUBLIC_VERIFY_KEY);
+//        JWTTokenUtil.Singleton().generateToken();
         return jwtAccessTokenConverter;
     }
 

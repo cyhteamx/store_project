@@ -21,7 +21,7 @@ public class BaseController {
      *
      * @return 角色名
      */
-    public List<String> getRole() {
+    public List<String> getRole() throws Exception {
         return UserUtils.getRole(request);
     }
 

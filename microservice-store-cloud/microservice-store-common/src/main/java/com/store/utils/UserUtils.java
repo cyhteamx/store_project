@@ -2,6 +2,7 @@ package com.store.utils;
 
 import com.alibaba.ttl.TransmittableThreadLocal;
 import com.store.constants.CommonConstants;
+import com.store.constants.SecurityConstants;
 import com.store.utils.jwt.IJWTInfo;
 import com.store.utils.jwt.JWTInfo;
 import io.jsonwebtoken.Claims;
@@ -10,7 +11,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.MDC;
 
+import javax.crypto.spec.SecretKeySpec;
 import javax.servlet.http.HttpServletRequest;
+import java.security.KeyFactory;
+import java.security.PublicKey;
+import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 import java.util.List;
 
@@ -77,10 +82,28 @@ public class UserUtils {
      * @param httpServletRequest request
      * @return 角色名
      */
-    public static List<String> getRole(HttpServletRequest httpServletRequest) {
+//    public static List<String> getRole(HttpServletRequest httpServletRequest) {
+//        String token = getToken(httpServletRequest);
+////        String key = Base64.getEncoder().encodeToString(CommonConstants.SIGN_KEY.getBytes());
+//        String key = Base64.getEncoder().encodeToString(SecurityConstants.PRIVATE_KEY_SIGNING_KEY.getBytes());
+//        Claims claims = Jwts.parser().setSigningKey(key).parseClaimsJws(token).getBody();
+//        List<String> roleNames = (List<String>) claims.get("authorities");
+//        return roleNames;
+//    }
+    public static List<String> getRole(HttpServletRequest httpServletRequest) throws Exception {
         String token = getToken(httpServletRequest);
-        String key = Base64.getEncoder().encodeToString(CommonConstants.SIGN_KEY.getBytes());
-        Claims claims = Jwts.parser().setSigningKey(key).parseClaimsJws(token).getBody();
+        String key = Base64.getEncoder().encodeToString(SecurityConstants.PRIVATE_KEY_SIGNING_KEY.getBytes());
+        SecretKeySpec aes = new SecretKeySpec(CommonConstants.SIGN_KEY.getBytes(), "AES");
+        X509EncodedKeySpec spec = new X509EncodedKeySpec(SecurityConstants.PUBLIC_VERIFY_KEY.getBytes());
+        KeyFactory kf = KeyFactory.getInstance("RSA");
+        PublicKey publicKey = kf.generatePublic(spec);
+
+//        Jws<Claims> claimsJws = Jwts.parser().setSigningKey(SecurityConstants.PRIVATE_KEY_SIGNING_KEY).parseClaimsJws(token);
+        aes.toString();
+//        Jwts.parser().setSigningKey(SecurityConstants.PUBLIC_VERIFY_KEY).parseClaimsJws(keySec.getTokenString());
+
+//        String key = Base64.getEncoder().encodeToString(SecurityConstants.PRIVATE_KEY_SIGNING_KEY.getBytes());
+        Claims claims = Jwts.parser().setSigningKey(publicKey).parseClaimsJws(token).getBody();
         List<String> roleNames = (List<String>) claims.get("authorities");
         return roleNames;
     }

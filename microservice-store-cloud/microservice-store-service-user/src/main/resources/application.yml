@@ -97,3 +97,7 @@ mybatis-plus:
 logging:
   level:
     com.store.mapper: trace
+
+ribbon:
+  eureka:
+    enabled: true

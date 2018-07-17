@@ -230,7 +230,7 @@ public class PigAuthorizationConfig extends AuthorizationServerConfigurerAdapter
 
 
     //PRIVATE KEY
-    private String privateKeySigningKey = "-----BEGIN RSA PRIVATE KEY-----\n" +
+    private String privateKeySigningKey1 = "-----BEGIN RSA PRIVATE KEY-----\n" +
             "MIIEogIBAAKCAQEA5aP/2VEGL/ZneHWof9prZTLbrS6WVAyLsADq4HE6Jzhpdvqi\n" +
             "JRNRFmMJZjWXgQAuT+IdhLQJZWZKBhCWKs6m8nUWKVN3C2/gFKIud9NMsYZh5FGP\n" +
             "ftE0r1wKKBr4/FCKPvQ+azTENRLa9nL/OCfW9Um2FnA3OZ2O1t83r8OEk2Ks9wjR\n" +
@@ -258,7 +258,7 @@ public class PigAuthorizationConfig extends AuthorizationServerConfigurerAdapter
             "4egrrINBkb62RaS32VyT+becVqzGB0dJaLVDdYGwoqAYYNL+nZU=\n" +
             "-----END RSA PRIVATE KEY-----\n";
 
-    private String publicVerifyKey = "-----BEGIN PUBLIC KEY-----\n" +
+    private String publicVerifyKey1 = "-----BEGIN PUBLIC KEY-----\n" +
             "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5aP/2VEGL/ZneHWof9pr\n" +
             "ZTLbrS6WVAyLsADq4HE6JzhpdvqiJRNRFmMJZjWXgQAuT+IdhLQJZWZKBhCWKs6m\n" +
             "8nUWKVN3C2/gFKIud9NMsYZh5FGPftE0r1wKKBr4/FCKPvQ+azTENRLa9nL/OCfW\n" +
@@ -267,5 +267,72 @@ public class PigAuthorizationConfig extends AuthorizationServerConfigurerAdapter
             "lHzJgatsD4mLEc5VvbR+GqZ4zc1nilYt4GgqM5pzP2v59IdqPzUpP7xFIb1arD/8\n" +
             "iwIDAQAB\n" +
             "-----END PUBLIC KEY-----";
+
+    private String publicVerifyKey = "-----BEGIN PUBLIC KEY-----\n" +
+            "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAv1VEeQpMcs6shMp6GGWV\n" +
+            "eIvDkOr7cH3ePIStPvRmK3yXazgek4mPQlsxH4dxUmnYT4sryc1gVdIfVkTPPkqW\n" +
+            "Bph7n4mc/uQwfzYWzHOBxshexQEDez5rKEp33+qCYCZV229F5d+AofhLtmGXKqtu\n" +
+            "FjM2+oNBz1pOAAPupZTH/0S4MReJSnGX90YH3wHhXzLH9ei9gO/XtZ0JtraZlU6n\n" +
+            "sHK4vc4S4v90Ws7H+CsjAlUa66ZUdPBSgtWT2GL6CatauzvEBcoQMDBIxLHbVQeh\n" +
+            "2FGueshOs0mMit1dQ45R2U24udCPV8vxRbk5Y6nsjDPYkCnxUVspYJa6Be4gEYyN\n" +
+            "rv7aLfOp7soKMomUYR4PxB5gkwmsgDEC+B2Gm/wHgdxHYh43cn90of81aoq/5as/\n" +
+            "iGQOAc5BoD9Pn+er63hL5yK7TmNsWyVHK5b3tp3c2uCoZKazDzGfOwbhIjvy5ldc\n" +
+            "NOHBW62FvcqxRdTHRODjQxlwDDCNl5rx4WJwVFd8y/lcz1EE1WXSu2gsgHpXrgpv\n" +
+            "lZ8AL6U4MtGv7QuA5Bj2uuoqvKy3qo+VsY7mjTkfII5Mb+WxHJOtMfoTWkl2m5A7\n" +
+            "FTV4pOuJAgpqDSVcK79Koj8InKoyH5+6IGhEqxrLefvyC+H4Pm/q5ZVdqJL+eVXV\n" +
+            "T9GdeoQ/IF+utQbWcgdUC9kCAwEAAQ==\n" +
+            "-----END PUBLIC KEY-----\n";
+
+    private String privateKeySigningKey = "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIJKAIBAAKCAgEAv1VEeQpMcs6shMp6GGWVeIvDkOr7cH3ePIStPvRmK3yXazge\n" +
+            "k4mPQlsxH4dxUmnYT4sryc1gVdIfVkTPPkqWBph7n4mc/uQwfzYWzHOBxshexQED\n" +
+            "ez5rKEp33+qCYCZV229F5d+AofhLtmGXKqtuFjM2+oNBz1pOAAPupZTH/0S4MReJ\n" +
+            "SnGX90YH3wHhXzLH9ei9gO/XtZ0JtraZlU6nsHK4vc4S4v90Ws7H+CsjAlUa66ZU\n" +
+            "dPBSgtWT2GL6CatauzvEBcoQMDBIxLHbVQeh2FGueshOs0mMit1dQ45R2U24udCP\n" +
+            "V8vxRbk5Y6nsjDPYkCnxUVspYJa6Be4gEYyNrv7aLfOp7soKMomUYR4PxB5gkwms\n" +
+            "gDEC+B2Gm/wHgdxHYh43cn90of81aoq/5as/iGQOAc5BoD9Pn+er63hL5yK7TmNs\n" +
+            "WyVHK5b3tp3c2uCoZKazDzGfOwbhIjvy5ldcNOHBW62FvcqxRdTHRODjQxlwDDCN\n" +
+            "l5rx4WJwVFd8y/lcz1EE1WXSu2gsgHpXrgpvlZ8AL6U4MtGv7QuA5Bj2uuoqvKy3\n" +
+            "qo+VsY7mjTkfII5Mb+WxHJOtMfoTWkl2m5A7FTV4pOuJAgpqDSVcK79Koj8InKoy\n" +
+            "H5+6IGhEqxrLefvyC+H4Pm/q5ZVdqJL+eVXVT9GdeoQ/IF+utQbWcgdUC9kCAwEA\n" +
+            "AQKCAgEAlknNzR2vywZYML4yhXNVoyh1ZyGMe2IC7Jpy0t56WnI1Jf0g11bX9pFW\n" +
+            "1qM2+js1s9Vngc4We5LfFo5aE13W1jtz727SqMxo46OC6PlZ2OCOwEP5jhcLaMyF\n" +
+            "uJal7gxuqDyRNO0IRzGXlxy09slNYZa8+q2bRdpzJkPwcpOZPQOngrgwGQ99BLg3\n" +
+            "eo4pjvN+acR1BhBe6cL+XEy1+rebtFeIkV6LK07pAGMoY+DOUQi0aqFt+aTDyw0k\n" +
+            "YnXsXSgBzsw1Py7m5FMo9YeW9wVVtWsDmGI6n02IXZNfrK7fz8bi8OHHlnkVfWTu\n" +
+            "lUBmFAKtex/W88adi8cZO4s+GUrEBnEVG9paXs98J8x/ILUET7paVtGGybTsf16r\n" +
+            "rLw966w0TF0wyHmhJRo8ZG8j4tzBb5oNshoDU/lZoGI8H4+gKmzADhWDtesM+EDK\n" +
+            "jjFg7bStAEgF5UjTCOmcoX5yOYqKyIZoflFJoeOZrPtbNsXMHfUfjYAaRyeR+0WS\n" +
+            "24tP4I6vjQuAuS9StHvOt4PyCIZWaHBBm52FzupkhVsZmve9q94TUVKvfZt5IMAs\n" +
+            "iSRcTDS2dWmrkhpn/koKJlsBBRkMQrISXw4et6pxfR80WdD7mY92k7fHdpcu9Ajv\n" +
+            "c558e9O1/1dPFl9qO3zHCJLJeVeNACjll8KH9Q4YazMwqm3zg+ECggEBAPiNmJwN\n" +
+            "RY1VW8O9SQdP6HXGEY1xA4XG77DaIebW8d6CpzsRnwX2qDtXZoHNpsx4q2mrA8i5\n" +
+            "j+jHKrGnZWvfnnkXNNtczVWssGDHcjkx0hkIL/GUcNeDPYsWPpoOhmZhxTdayfjD\n" +
+            "v/wHoMt5Zqm3eZww6t/2SzYvTseuGOsfpuwmZEI3hxGxpABDp9mrswn3CNneT0X+\n" +
+            "5t3AXZnWZ6+FEZi7cLxXuGj6oI62VMRot6ZQoi1Y0F9d8JcaW2HDIG1B65NiTmU9\n" +
+            "97fcLzGKPeAnpwWSRzi/g3TAP178M2eIF55z164pFg1/v+RggKmt1t7JdAUY8hvN\n" +
+            "phg2649M7OE8PD0CggEBAMUQyxfTwZDVtD88hv72qCKSKkyh/oZ2kEp78YE4R+6S\n" +
+            "NiP/+Shslh6HC21ZeZ43Qtj2MTcQveRssyzdZafZtZ3SogXE7AkYyfmnN2Tmtv7u\n" +
+            "leUJ3V3CB6pAp3vM4eRTSdXHsC6EVJHstSdXEUNmcyRSZwIUExr8JVcLtSQ9BRKL\n" +
+            "B7ZDjO2yLLUqAXuEC4KmP3TeL0SXX6oy743Wk4UKe8vp7wsYe4KaP+3uWgJdv5Sc\n" +
+            "6wzZ5SdrSis0CH9Kh8SHgEVlLJ6h0fj+ownxSzVKsWjxmTu5Nv51x7v0nDFCMvi4\n" +
+            "lOknBbNEO+fbvZbumzMIrWQyBIDpba1lqK/Xlo+o+80CggEAVeqsPBUiW66L3+eI\n" +
+            "XOy0UDG9U4UjUJTpudpNKbxXMzE6mWKH88nFcW3O00PBSqDTr90bm8D5C9/81Bgn\n" +
+            "KNjNsNHixYkYuWrONUX8J+Ue2ORJnlpPf0+wcGmqDhrDPpTBVVcexcz0iiwg2vUG\n" +
+            "FdiEQwdtySkb6okD1GZL2srAKpVCxtjm6ajcJfM9DDMb2m/4MUd1Y56vMywRruG8\n" +
+            "SaHX6VGxsIkqB6/K3EoOly4TfXwV81LmBHE2fyTvPaXziZDl27Z5numCvZ1w+tDs\n" +
+            "fpV2WKit0eHxkOP7g9vt8PXMJEuq3Fr7coMcU9c/4mdjBPPiFPkAh7fYmDozxv8y\n" +
+            "StFFiQKCAQAk8jwRcIsG23oarP9mR9pH+P1jNq/gh9QPkuM5ZdLeoJzz7ObKtGkE\n" +
+            "ui7jRnYtupCW2rlpaIMhk1uYWr3XVVLejwH/cOcL4ZDkdHxHN5Yxf4us0Eenb1w+\n" +
+            "iDaeWFA1nYPnR7P5VKgCX82q3YEIEOofci+LzTWzxng9tJ02eRY9XsGIY2vFmLUX\n" +
+            "FhQHEz+RNBgLkihshLDT2Q7emc84jzmchnRhsSpe1wqLUjef3/GuLClJVITI+i2C\n" +
+            "ohPBwbhomTrsR8awywfx1dO9ZnbCPAm88ibXcqcj1/MlgvvRpGaoCPsqJz3DWVSd\n" +
+            "6K3H4V5JmCPh+BquDJWaf8e7iADbWEQ1AoIBAHpEyYZqm5ZVx/Ud0b+LTFs3NPcu\n" +
+            "zkHEO6TbdOFMv2GLaQI7s0LMsy+7WxMnURpG0NFgKCdnz9z9ADLwU4/O4+FWwrAG\n" +
+            "5Qnmurrkio6iBO3ifYvuNLWqlRWgy/JUkFgKF9iNJ09oNOv5qjQyeCP+jNMpDMrk\n" +
+            "0pzlqnqhdqDmJ4mlnM2hlRkPnDtYpfeQ4eeOZF8vztt0AMtqYHxayEVFt8uRExCE\n" +
+            "oPxMr0YMsjA6uO5q7Rro2xyDV89r2CMAKcGPlVaj1of/uMHLKDUjCw0RrZ0NHn86\n" +
+            "1N9C5d/NBImnM5VY+ndVpD3meZCuRUjMpFvXovHHY/ynXDQ1SgWxm0+liRg=\n" +
+            "-----END RSA PRIVATE KEY-----\n";
 
 }

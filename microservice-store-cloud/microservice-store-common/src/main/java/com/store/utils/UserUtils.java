@@ -10,11 +10,14 @@ import io.jsonwebtoken.Jwts;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.MDC;
+import sun.misc.BASE64Decoder;
 
 import javax.crypto.spec.SecretKeySpec;
 import javax.servlet.http.HttpServletRequest;
 import java.security.KeyFactory;
+import java.security.PrivateKey;
 import java.security.PublicKey;
+import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 import java.util.List;
@@ -92,18 +95,33 @@ public class UserUtils {
 //    }
     public static List<String> getRole(HttpServletRequest httpServletRequest) throws Exception {
         String token = getToken(httpServletRequest);
-        String key = Base64.getEncoder().encodeToString(SecurityConstants.PRIVATE_KEY_SIGNING_KEY.getBytes());
-        SecretKeySpec aes = new SecretKeySpec(CommonConstants.SIGN_KEY.getBytes(), "AES");
-        X509EncodedKeySpec spec = new X509EncodedKeySpec(SecurityConstants.PUBLIC_VERIFY_KEY.getBytes());
+        //String key = Base64.getEncoder().encodeToString(SecurityConstants.PRIVATE_KEY_SIGNING_KEY.getBytes());
+        //SecretKeySpec aes = new SecretKeySpec(CommonConstants.SIGN_KEY.getBytes(), "AES");
+        /*X509EncodedKeySpec spec = new X509EncodedKeySpec(SecurityConstants.PUBLIC_VERIFY_KEY.getBytes());
         KeyFactory kf = KeyFactory.getInstance("RSA");
-        PublicKey publicKey = kf.generatePublic(spec);
+        PublicKey publicKey = kf.generatePublic(spec);*/
+
+        String realPK = SecurityConstants.PRIVATE_KEY_SIGNING_KEY_PKCS8
+                .replaceAll("-----END PRIVATE KEY-----", "")
+                .replaceAll("-----BEGIN PRIVATE KEY-----", "")
+                .replaceAll("\n", "")
+                ;
+
+        //byte[] pkey = Base64.getDecoder().decode(realPK);
+
+        //String realPK = SecurityConstants.PRIVATE_KEY_SIGNING_KEY;
+
+        PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec((new BASE64Decoder()).decodeBuffer(realPK));
+        //X509EncodedKeySpec keySpec = new X509EncodedKeySpec((new BASE64Decoder()).decodeBuffer(realPK));
+        KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+        PrivateKey privateKey = keyFactory.generatePrivate(keySpec);
 
 //        Jws<Claims> claimsJws = Jwts.parser().setSigningKey(SecurityConstants.PRIVATE_KEY_SIGNING_KEY).parseClaimsJws(token);
-        aes.toString();
+        //aes.toString();
 //        Jwts.parser().setSigningKey(SecurityConstants.PUBLIC_VERIFY_KEY).parseClaimsJws(keySec.getTokenString());
 
 //        String key = Base64.getEncoder().encodeToString(SecurityConstants.PRIVATE_KEY_SIGNING_KEY.getBytes());
-        Claims claims = Jwts.parser().setSigningKey(publicKey).parseClaimsJws(token).getBody();
+        Claims claims = Jwts.parser().setSigningKey(privateKey).parseClaimsJws(token).getBody();
         List<String> roleNames = (List<String>) claims.get("authorities");
         return roleNames;
     }

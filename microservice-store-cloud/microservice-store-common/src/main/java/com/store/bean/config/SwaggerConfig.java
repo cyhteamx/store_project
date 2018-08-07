@@ -47,13 +47,20 @@ public class SwaggerConfig {
                 .build()
                 .globalOperationParameters(parameterList);
     }
-
+    /**
+     * 创建API应用
+     * apiInfo() 增加API相关信息
+     * 通过select()函数返回一个ApiSelectorBuilder实例,用来控制哪些接口暴露给Swagger来展现，
+     * 本例采用指定扫描的包路径来定义指定要建立API的目录。
+     *
+     * @return
+     */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Pig Swagger API ")
-                .description("https://gitee.com/log4j/pig/wikis")
-                .termsOfServiceUrl("https://gitee.com/log4j/pig")
-                .contact(new Contact("冷冷","https://gitee.com/log4j/pig","wangiegie@gmail.com"))
+                .title("说明文档")
+                .description("接口说明文档")
+                .termsOfServiceUrl("https://gitee.com/")
+                .contact(new Contact("yqqyyq","yqssg@qq.com","yqssg@qq.com"))
                 .version("1.0")
                 .build();
     }

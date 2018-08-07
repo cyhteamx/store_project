@@ -25,7 +25,7 @@
         </span>
       </el-tooltip>
       <el-tooltip class="item" effect="dark" content="用户头像" placement="bottom">
-        <img class="top-userImg" :src="userInfo.avatar">
+        <img class="top-userImg" :src="userInfo.orgCode">
       </el-tooltip>
       <el-dropdown>
         <span class="el-dropdown-link">
